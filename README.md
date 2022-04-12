@@ -1,23 +1,25 @@
-# TÍTULO DO PROJETO
+# MyDoctor
 
-`CURSO`
+`CURSO`: Análise e Desenvolvimento de Sistemas EAD
 
-`DISCIPLINA`
+`DISCIPLINA`: Projeto - Desenvolvimento de Aplicação Web Front-end
 
-`SEMESTRE`
+`SEMESTRE`: 01
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto "MyDoctor" trata-se de um website responsivo, que possui o objetivo que auxiliar a sociedade a encontrar médicos confiáveis. É uma plataforma que permite cadastrar novos médicos, bem como buscar esses profissionais de acordo com a cidade que se deseja. Ao realizar a busca, serão obtidas diversas informações do profissional, tais como: especialidade, localização do consultório, agenda disponível, valores, dentre outras. .Além disso, a plataforma também serve como uma ferramenta de trabalho para a classe médica, que poderá divulgar os seus serviços e ampliar o networking.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Bruno Victor de Oliveira Flavio
+* Débora Cristina Pereira Gonçalves
+* Franciele Balverde de Souza
+* Gabriela Barbosa Caetano Abran
+* João Paulo Faria do Nascimento
+* Nayla Nicolli Ferreira
 
 ## Orientador
 
-* Nome completo do professor 1
+* Daniela Carvalho Monteiro Ferreira
 
 ## Instruções de utilização
 
