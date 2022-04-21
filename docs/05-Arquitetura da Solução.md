@@ -19,10 +19,6 @@ A solução implementada conta com os seguintes módulos:
       - **Avaliações** - uma lista com os JSON’s. Cada item da lista possui os dados preenchidos no formulário de avaliação do médico, tais como: nome do médico, nome do paciente, nota da avaliação, dentre outros.
   - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
 
-> **Links Úteis**:
->
-> - [Whimsical](https://whimsical.com/)
-
 Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
 
 A imagem a seguir ilustra a o fluxo do usuário em nossa solução. Assim
