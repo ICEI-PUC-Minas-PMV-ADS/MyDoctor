@@ -63,11 +63,11 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 O site utiliza a plataforma do Heroku como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL:
  
-                                        - [HerokuApp MyDoctor](https://project-my-doctor.herokuapp.com/)
+> - [HerokuApp MyDoctor](https://project-my-doctor.herokuapp.com/)
 
 A publicação do site no Heroku é feita por meio de uma submissão do projeto (push) via git para o repositório remoto que se encontra no endereço:
 
-                                        - [HerokuApp Git MyDoctor](https://git.heroku.com/project-my-doctor.git)                                        
+> - [HerokuApp Git MyDoctor](https://git.heroku.com/project-my-doctor.git)
 
 > **Links Úteis**:
 >
