@@ -6,7 +6,7 @@
 
 Os componentes que fazem parte da solução são apresentados na Figura que se segue.
 
-<img src="https://user-images.githubusercontent.com/63374421/164536826-4d943e88-6b4d-467a-b72f-b9bb6e9ed6e0.jpg" width="300" height="200">
+<img src="https://user-images.githubusercontent.com/63374421/164536826-4d943e88-6b4d-467a-b72f-b9bb6e9ed6e0.jpg" width="300">
 <center>Figura XX - Arquitetura da Solução</center>
 
 A solução implementada conta com os seguintes módulos:
@@ -18,7 +18,7 @@ A solução implementada conta com os seguintes módulos:
   - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
 
 Foi feito o protótipo de cada tela para o ambiente mobile:
-<img src="https://user-images.githubusercontent.com/63374421/164981269-c3360da0-3fdb-4d90-a5f5-e42bc0156da5.PNG" width="200" height="500">
+<img src="https://user-images.githubusercontent.com/63374421/164981269-c3360da0-3fdb-4d90-a5f5-e42bc0156da5.PNG" width="200">
 <center>Figura XX - Home Page</center>
 <center>Figura XX - Seja um médico parceiro</center>
 <center>Figura XX - Procure seu médico</center>
