@@ -2,13 +2,11 @@
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
 ## Diagrama de componentes
 
 Os componentes que fazem parte da solução são apresentados na Figura que se segue.
 
-![arquitetura](https://user-images.githubusercontent.com/63374421/164536826-4d943e88-6b4d-467a-b72f-b9bb6e9ed6e0.jpg)
+<img src="https://user-images.githubusercontent.com/63374421/164536826-4d943e88-6b4d-467a-b72f-b9bb6e9ed6e0.jpg" width="300" height="200">
 <center>Figura XX - Arquitetura da Solução</center>
 
 A solução implementada conta com os seguintes módulos:
@@ -18,6 +16,14 @@ A solução implementada conta com os seguintes módulos:
       - **Médicos** - esse dado será armazenado como uma lista com os JSON’s. Cada item da lista possui os dados do médico preenchidos no cadastro “Seja um médico parceiro”: nome, endereço, CRM, cidade, dentre outros dados. Esses dados são as respectivas “chaves” e “valores” do JSON.
       - **Avaliações** - assim como os médicos, as avaliações serão armazenadas como uma lista de JSON’s, sendo que cada JSON possui os dados preenchidos no formulário de avaliação do médico, tais como: nome do médico, nome do paciente, nota da avaliação e outros.
   - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
+
+Foi feito o protótipo de cada tela para o ambiente mobile:
+<img src="https://user-images.githubusercontent.com/63374421/164981269-c3360da0-3fdb-4d90-a5f5-e42bc0156da5.PNG" width="200" height="500">
+<center>Figura XX - Home Page</center>
+<center>Figura XX - Seja um médico parceiro</center>
+<center>Figura XX - Procure seu médico</center>
+<center>Figura XX - Esqueci minha senha</center>
+
 
 Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
 
