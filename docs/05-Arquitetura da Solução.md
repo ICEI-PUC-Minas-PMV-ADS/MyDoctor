@@ -14,9 +14,9 @@ Os componentes que fazem parte da solução são apresentados na Figura que se s
 A solução implementada conta com os seguintes módulos:
 - **Navegador** - Interface básica do sistema  
   - **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
-   - **Local Storage** - armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em JSON. São eles: 
-      - **Médicos** - uma lista com os JSON’s. Cada item da lista possui os dados do médico preenchidos no cadastro “Seja um médico parceiro”: nome, endereço, CRM, cidade, dentre outros dados.
-      - **Avaliações** - uma lista com os JSON’s. Cada item da lista possui os dados preenchidos no formulário de avaliação do médico, tais como: nome do médico, nome do paciente, nota da avaliação, dentre outros.
+   - **Local Storage** - armazenamento mantido no Navegador. Serão salvos os seguintes dados:
+      - **Médicos** - esse dado será armazenado como uma lista com os JSON’s. Cada item da lista possui os dados do médico preenchidos no cadastro “Seja um médico parceiro”: nome, endereço, CRM, cidade, dentre outros dados. Esses dados são as respectivas “chaves” e “valores” do JSON.
+      - **Avaliações** - assim como os médicos, as avaliações serão armazenadas como uma lista de JSON’s, sendo que cada JSON possui os dados preenchidos no formulário de avaliação do médico, tais como: nome do médico, nome do paciente, nota da avaliação e outros.
   - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
 
 Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
