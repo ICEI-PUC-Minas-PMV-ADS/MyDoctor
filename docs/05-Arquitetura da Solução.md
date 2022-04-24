@@ -39,13 +39,16 @@ Foi feito o protótipo de cada tela para o ambiente mobile:
 <center>Figura XX - Menu inferior</center>
 
 
-A imagem a seguir ilustra a o fluxo do usuário em nossa solução. Assim que o usuário entra na plataforma, ele é apresentado à tela inicial (Tela 1). No menu inferior temos as seguintes opções de navegação: "Quem somos", "Contato", "Seja um médico parceiro" e "Procure seu médico". Esse menu está disponível em todas as telas da aplicação. 
+
+A imagem a seguir ilustra o fluxo do usuário em nossa solução. Assim que o usuário entra na plataforma, ele é apresentado à tela inicial (Tela 1). No menu inferior temos as seguintes opções de navegação: "Quem somos", "Contato", "Seja um médico parceiro" e "Procure seu médico". Esse menu está disponível em todas as telas da aplicação. 
 
 Nesse menu, caso o usuário clique na opção "Quem somos", será direcionado para a área específica da página inicial, que contém a "Missão, Visão e Valores" do MyDoctor.
 
 O mesmo acontece para a próxima opção do menu "Contato", sendo direcionado para a última parte da página inicial, a qual possui as informações de contato.
 
-Ao escolher a opção "Seja um médico parceiro" no menu inferior, será direcionado a para tela de cadastro do médico (Tela 4), com os diversos campos para preenchimento. Nessa mesma tela, o médico também poderá fazer a edição do seu cadastro, caso já possua. Além disso, também é possível fazer a redefinição da senha. Na tela "Seja um médico parceiro", os botões de "Editar e "Redefinir a sua senha", apenas estarão visíveis ao médico se o mesmo possuir o cadastro. Caso opte pela opção de redefinir a senha, o usuário será direcionado para a Tela 5, onde poderá preencher o seu email cadastrado e assim recuperar a senha.
+Ao escolher a opção "Seja um médico parceiro" no menu inferior, será direcionado a para tela de cadastro do médico (Tela 4), com os diversos campos para preenchimento. Nessa mesma tela, o médico também poderá fazer a edição do seu cadastro, caso já possua.
+
+Além disso, também é possível fazer a redefinição da senha. Na tela "Seja um médico parceiro", os botões de "Editar" e "Redefinir a sua senha", apenas estarão visíveis ao médico se o mesmo possuir o cadastro. Caso opte pela opção de redefinir a senha, o usuário será direcionado para a Tela 5, onde poderá preencher o seu email cadastrado e assim recuperar a senha.
 
 A última opção do menu inferior é "Procure o seu médico". Se o usuário clicar nessa opção, será direcionado para a Tela 6, onde poderá filtrar por região ou especialidade e obter os dados do(s) médico(s) que deseja.
 
