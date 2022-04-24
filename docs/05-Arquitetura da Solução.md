@@ -18,20 +18,26 @@ A solução implementada conta com os seguintes módulos:
   - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
 
 Foi feito o protótipo de cada tela para o ambiente mobile:
+
 ![home page](https://user-images.githubusercontent.com/63374421/164981438-b2039a26-2499-4db4-b66f-6ff56b7de8e9.PNG)
 <center>Figura XX - Home Page</center>
+
 
 ![seja medico parceiro](https://user-images.githubusercontent.com/63374421/164981452-d4ad5b68-5f8e-495c-b63a-a34feb934a38.PNG)
 <center>Figura XX - Seja um médico parceiro</center>
 
+
 ![procure seu medico](https://user-images.githubusercontent.com/63374421/164981467-f8c3f9ec-987d-4260-934c-f1a081289acf.PNG)
 <center>Figura XX - Procure seu médico</center>
+
 
 ![esqueci senha](https://user-images.githubusercontent.com/63374421/164981480-b20685d1-128a-4157-bf4f-698c32a2042a.PNG)
 <center>Figura XX - Esqueci minha senha</center>
 
+
 ![menu](https://user-images.githubusercontent.com/63374421/164981535-dfd760df-4f53-4eb1-9b23-adb1f147d44b.PNG)
 <center>Figura XX - Menu inferior</center>
+
 
 A imagem a seguir ilustra a o fluxo do usuário em nossa solução. Assim que o usuário entra na plataforma, ele é apresentado à tela inicial (Tela 1). No menu inferior temos as seguintes opções de navegação: "Quem somos", "Contato", "Seja um médico parceiro" e "Procure seu médico". Esse menu está disponível em todas as telas da aplicação. 
 
@@ -41,9 +47,11 @@ O mesmo acontece para a próxima opção do menu "Contato", sendo direcionado pa
 
 Ao escolher a opção "Seja um médico parceiro" no menu inferior, será direcionado a para tela de cadastro do médico (Tela 4), com os diversos campos para preenchimento. Nessa mesma tela, o médico também poderá fazer a edição do seu cadastro, caso já possua. Além disso, também é possível fazer a redefinição da senha. Na tela "Seja um médico parceiro", os botões de "Editar e "Redefinir a sua senha", apenas estarão visíveis ao médico se o mesmo possuir o cadastro. Caso opte pela opção de redefinir a senha, o usuário será direcionado para a Tela 5, onde poderá preencher o seu email cadastrado e assim recuperar a senha.
 
-A última opção do menu inferior é "Procure o seu médico". Se o usuário clicar nessa opção, será direcionado para a Tela 5, onde poderá filtrar por região ou especialidade e obter os dados do(s) médico(s) que deseja.
+A última opção do menu inferior é "Procure o seu médico". Se o usuário clicar nessa opção, será direcionado para a Tela 6, onde poderá filtrar por região ou especialidade e obter os dados do(s) médico(s) que deseja.
+
 
 ![Fluxo de usuário](https://user-images.githubusercontent.com/63374421/164981563-317f5ca4-7d77-4636-8458-6ae52214e6bd.jpg)
+<center>Figura XX - Fluxo do usuário</center>
 
 ## Tecnologias Utilizadas
 
