@@ -23,8 +23,12 @@ ul {
     margin: 0;
 }
 
-.container-display-flex {
+.container-display-flex, #list-navbar {
     display: flex;
+}
+
+#list-navbar.ativo {
+    display: block;
 }
 
 #image-mydoctor {
@@ -39,6 +43,10 @@ ul {
     background-color: green;
     border: 1px solid black;
     cursor: pointer;
+}
+
+#navbar-mobile {
+    display: none;
 }
 
 #healthy {
@@ -74,4 +82,43 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+@media (max-width: 650px) {
+    .container-display-flex {
+        flex-direction: column;
+    }
+
+    #about-us div h5 {
+        margin-top: 20px;
+    }
+
+    #about-us div {
+        padding: 0;
+    }
+
+    #image-healthy {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .item-navbar {
+        height: 60px;
+    }
+
+    #list-navbar {
+        flex-direction: column;
+        display: none;
+    }
+
+    .item-navbar {
+        height: auto;
+    }
+
+    #navbar-mobile {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
 }
