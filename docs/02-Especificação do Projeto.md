@@ -1,4 +1,4 @@
-# Especificações do Projeto
+# Especificação do Projeto
 
 Tendo apresentado o embasamento e os objetivos desse projeto, passaremos a explicitar o modo pelo qual pretendemos realizar esses objetivos. 
 
@@ -32,7 +32,7 @@ Um requisito é uma característica observável a qual a solução deverá exerc
 
 Enquanto os requisitos funcionais englobam as atribuições necessárias a serem exercidas após a interação do usuário com a página web, os requisitos não funcionais referem-se ao uso da aplicação (website) no quesito de usabilidade, confiabilidade, disponibilidade, desempenho, entre outros.
 
-## Dispositivos tecnológicos para a inclusão
+### Dispositivos tecnológicos para a inclusão
 
 A fim de tornar o site inclusivo para pessoas com alguma dificuldade física para acessá-lo, alguns dispositivos tecnológicos serão implementados. 
 
