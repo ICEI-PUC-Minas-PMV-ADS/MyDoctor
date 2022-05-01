@@ -1,3 +1,5 @@
+# Documentação de Contexto 
+
 ## Introdução
 
 Com a ascensão da era digital na sociedade contemporânea, cresceu exponencialmente o acesso à informação. Com alguns cliques tornou-se possível buscar soluções para as mais variadas necessidades, tanto no âmbito profissional quanto no âmbito pessoal. 
