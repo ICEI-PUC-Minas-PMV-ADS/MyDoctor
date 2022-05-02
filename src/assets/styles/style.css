@@ -122,3 +122,127 @@ footer p {
         right: 10px;
     }
 }
+
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+.cabecalho{
+   margin: 0px;
+}
+.secao1{
+    display:flex;
+    align-items: center;
+    gap: 100px;
+
+    background-color: rgb(151, 143, 143);
+}
+.titulo1 {
+    font-size: 100px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.imagem1 {
+    height: 210px;
+    width: 50%;
+}
+.secao2{
+    background-color:lightseagreen; 
+    width: 50%;
+    border-radius: 4px;
+    
+}
+.menu-geral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 34px;
+  
+}
+.menu{
+    color: black;
+    font-size: 14px;
+    border: 0;
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    
+   
+}
+.menu:hover{
+    background-color:rgb(135, 243, 135);
+    color: white
+}
+body {
+    font-size: 100%;
+    background-color:white
+}
+.titulo2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    margin: auto;
+    padding: 35px;
+    text-align: center; 
+}
+
+.secao4{
+    width: 100%;
+    height: auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   row-gap: 20px;
+   column-gap: 30px;
+}
+
+.informa{
+    width: 500px;
+    height: 30px;
+}
+
+footer{
+    background-color: rgb(151, 143, 143);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.05em;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+}
+footer>p>a {
+    color:white;
+    font-weight: bolder;
+    text-decoration: none;}
+
+    footer a:hover{
+        text-decoration: underline;
+        color:black;
+
+    }
+
+    .botao {
+    font-size:1.2em;
+    background-color:lightseagreen; 
+    border: 0;
+    margin-top:  1.5em;
+    color: black;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: bold;
+    }
+
+    .botao:hover{
+        background-color:rgb(135, 243, 135);
+        color: white
+
+    }
+
+
