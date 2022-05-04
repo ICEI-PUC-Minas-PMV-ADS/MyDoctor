@@ -81,7 +81,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 | RNF-02 | O site deve ser responsivo, permitindo a visualização em um celular, desktop, tablet de forma adequada.| Alta |
 | RNF-03 | O site deve ter bom nível de contraste entre os elementos da tela em conformidade.| Média |
 | RNF-04 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).| Alta |
-| RNF-05 | O arquivo de HTML deve apresentar tags semânticas, como: 'nav'/'header'/'section'/'main'/'section'... Tornando assim o código mais claro para os leitores de tela localizar um conteúdo.| Média |
+| RNF-05 | O arquivo de HTML deve apresentar tags semânticas, como: <nav>, <header>, <section>, <main>, <section>. Tornando assim o código mais claro para os leitores de tela localizar um conteúdo.| Média |
 | RNF-06 | O arquivo HTML deve apresentar a tag 'img alt' , que mostra a descrição da imagem, possível a leitura da mesma quanto utilizado leitor de tela.| Média |
 | RNF-07 | O desenvolvimento deve ser em HTML, CSS, Javascript, podendo utilizar frameworks.| Média |
 
