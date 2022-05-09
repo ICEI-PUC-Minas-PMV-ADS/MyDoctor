@@ -1,12 +1,12 @@
 window.onload = () => {
-    showMenuMobile();
+    mostrarMenuMobile();
 }
 
-const showMenuMobile = () => {
+const mostrarMenuMobile = () => {
     let menuMobile = document.querySelector("#navbar-mobile");
 
     menuMobile.addEventListener("click", () => {
-        let itemsMenu = document.querySelector("#list-navbar");
-        itemsMenu.classList.toggle("ativo");
+        let itensMenu = document.querySelector("#lista-navbar");
+        itensMenu.classList.toggle("ativo");
     });
 }
