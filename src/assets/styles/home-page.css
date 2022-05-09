@@ -18,18 +18,18 @@ h5 {
     display: block;
 }
 
-#imagem-mydoctor img {
+#imagem-mydoctor, #imagem-mydoctor img {
     width: 100%;
     height: 280px;
 }
 
 .item-navbar {
-    margin-right: 10px;
-    padding: 5px;
-    background-color: green;
-    border: 1px solid black;
+    padding: 5px 15px;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightseagreen;
 }
 
 #navbar-mobile {
@@ -39,6 +39,10 @@ h5 {
 #saude {
     margin: 20px 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#saude p {
+    padding: 0 10px;
 }
 
 #saude h4 {
@@ -57,6 +61,10 @@ h5 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#sobre p {
+    padding-top: 10px;
+}
+
 #contato {
     margin-top: 30px;
 }
@@ -64,14 +72,20 @@ h5 {
 #rodape-home-page {
     width: 100%;
     margin-top: 30px;
-    padding: 20px 0;
-    background-color: gray;
+    font-size: 16.8px;
+    padding: 5px;
+    background-color: rgb(151, 143, 143);
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #rodape-home-page p {
     text-align: center;
+}
+
+#rodape-home-page a {
+    font-weight: bold;
+    color: white;
 }
 
 @media (max-width: 650px) {
