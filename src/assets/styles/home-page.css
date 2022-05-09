@@ -18,10 +18,9 @@ h5 {
     display: block;
 }
 
-#imagem-mydoctor {
-    background-color: gray;
+#imagem-mydoctor img {
     width: 100%;
-    height: 200px;
+    height: 280px;
 }
 
 .item-navbar {
