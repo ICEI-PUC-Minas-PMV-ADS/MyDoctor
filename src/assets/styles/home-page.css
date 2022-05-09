@@ -1,3 +1,7 @@
+h4, h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .container-display-flex, #list-navbar {
     display: flex;
 }
@@ -18,6 +22,7 @@
     background-color: green;
     border: 1px solid black;
     cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #navbar-mobile {
@@ -26,6 +31,7 @@
 
 #healthy {
     margin: 20px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #healthy h4 {
@@ -41,21 +47,23 @@
 
 #about-us, #about-us div, #contact {
     padding: 0 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #contact {
     margin-top: 30px;
 }
 
-footer {
+#rodape-home-page {
     width: 100%;
     margin-top: 30px;
     padding: 20px 0;
     background-color: gray;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer p {
+#rodape-home-page p {
     text-align: center;
 }
 
