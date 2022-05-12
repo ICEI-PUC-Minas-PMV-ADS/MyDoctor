@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="shortcut icon" href="tempsnip.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/assets/styles/geral.css">
+    <script src="dbfaq.js"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <section class="secao1">
+            <img class="imagem1" src="/src/assets/imagens/imagem-header.PNG" alt="My Doctor">
+            <h1 class="titulo1"> My Doctor</h1>
+        </section>
+        <section class="secao2">
+            <nav class="menu-geral">
+                <a class="menu" href="http://">Quem somos</a>
+                <a class="menu" href="http://">Contatos</a>
+                <a class="menu" href="http://">Seja um médico parceiro</a>
+                <a class="menu" href="http://">Procure o seu médico</a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="secao3">
+            <h1 class="titulo2">Fale Conosco</h1>
+        </section>
+        <section  id="contatos" class="secao4">
+            <h1>Contato</h1><br>
+            <div>
+                <p>Endereço: Rua Lafaiete, 766. Centro - Ribeirão Preto - SP <br>
+                    Telefone: (16) 3605-5599 <br>
+                    E-mail: gabran@sga.pucminas.br <br>
+                    Atendimento via WhatsApp: (16) 98125-2525 <br>
+                </p>
+            </div>
+        </section><br>
+        <section id="FAQ" class="secao4">
+            <h1>Perguntas Frequentes</h1><br>
+            <div id="Pergunta">
+
+            </div>
+        </section>
+        <section id="Mensagem" class="secao4">
+            <div>
+                <h1>Envie uma mensagem</h1>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape-cadastro">
+        <p>Site criado pelo <a href=xxxxxxxx target="_blank">Grupo xxxx</a> para <a href=xxxxxxxxx target="_blank">
+                PUC-MINAS</a></p>
+    </footer>
+    <script>
+        var perg = '';
+        for (i=0; i < db.faq.length; i++) {
+            perg += `Pergunta: ${ db.faq[i].Pergunta } <br> <resp += Resposta="${ db.faq[i].Resposta }"> <br>`;
+        }
+        document.getElementById('Pergunta').innerHTML = perg;
+    </script>
+</body>
+
+</html>
