@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background-color:white;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+h4, h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+.container-display-flex, #lista-navbar {
+    display: flex;
+}
+
+#lista-navbar.ativo {
+    display: block;
+}
+
+#imagem-mydoctor, #imagem-mydoctor img {
+    width: 100%;
+    height: 280px;
+}
+
+.item-navbar {
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightseagreen;
+}
+
+#navbar-mobile {
+    display: none;
+}
+
+#FAQ {
+    margin: 10px 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+#FAQ p {
+    padding: 0 10px;
+    text-align: justify;
+    justify-content: right;
+    width: 1000px;
+}
+
+#FAQ h4 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#contato {
+    margin: 10px 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+#contato p {
+    padding: 0 10px;
+    text-align: left;
+}
+
+#contato h4 {
+    text-align:left;
+    margin-bottom: 30px;
+}
+
+#imagem-faleconosco {
+    margin-top: 30px;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    align-items: center
+}
+
+#mensagem {
+    margin: 10px 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+#mensagem p {
+    padding: 0 10px;
+    text-align: left;
+}
+
+#mensagem h4 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.informa {
+    width: 500px;
+    height: 100px;
+}
+
+.botao {
+    font-size: 1.2em;
+    background-color: lightseagreen;
+    border: 0;
+    margin-top: 1.5em;
+    color: black;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: rgb(135, 243, 135);
+    color: white;
+}
+
+#botao-enviar {
+    display: flex;
+    justify-content: center;
+}
+
+#rodape-faleconosco {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16.8px;
+    padding: 5px;
+    background-color: rgb(151, 143, 143);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#rodape-faleconosco p {
+    text-align: center;
+}
+
+#rodape-faleconosco a {
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .container-display-flex {
+        flex-direction: column;
+    }
+
+    #contato div h5 {
+        margin-top: 30px;
+    }
+
+    #contato div {
+        padding: 0;
+    }
+
+    .item-navbar {
+        height: 60px;
+    }
+
+    #lista-navbar {
+        flex-direction: column;
+        display: none;
+    }
+
+    .item-navbar {
+        height: auto;
+    }
+
+    #navbar-mobile {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
+}
+

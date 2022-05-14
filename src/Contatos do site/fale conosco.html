@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -7,59 +7,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
     <link rel="shortcut icon" href="tempsnip.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/src/assets/styles/geral.css">
+    <link rel="stylesheet" href="/src/assets/styles/faleconosco.css">
     <script src="dbfaq.js"></script>
+    <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <section class="secao1">
-            <img class="imagem1" src="/src/assets/imagens/imagem-header.PNG" alt="My Doctor">
-            <h1 class="titulo1"> My Doctor</h1>
-        </section>
-        <section class="secao2">
-            <nav class="menu-geral">
-                <a class="menu" href="http://">Quem somos</a>
-                <a class="menu" href="http://">Contatos</a>
-                <a class="menu" href="http://">Seja um médico parceiro</a>
-                <a class="menu" href="http://">Procure o seu médico</a>
-            </nav>
-        </section>
+    <header>
+        <div id="container">
+            <section id="header">
+                <div id="navbar-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </div>
+                <div id="imagem-mydoctor">
+                    <img src="/src/assets/imagens/imagem-header.PNG" alt="Cabeçalho My Doctor">
+                </div>
+                <nav>
+                    <ul id="lista-navbar">
+                        <a href="#sobre">
+                            <li class="item-navbar"><a href=""><i class="fa fa-home"></i>
+                                    Quem somos
+                            </li>
+                        </a>
+                        <a href="/src/Contatos do site/fale conosco.html">
+                            <li class="item-navbar"><a href=""><i class="fa-solid fa-at"></i>
+                                    Contato
+                            </li>
+                        </a>
+                        <a href="/src/Cadastro/index.html">
+                            <li class="item-navbar"><a href=""><i class="fa-solid fa-house-medical"></i>
+                                    Seja um médico parceiro
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="item-navbar"><i class="fa fa-search"></i>
+                                Procure seu médico
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
     </header>
     <main>
-        <section class="secao3">
-            <h1 class="titulo2">Fale Conosco</h1>
-        </section>
-        <section  id="contatos" class="secao4">
-            <h1>Contato</h1><br>
+        <section id="FAQ">
             <div>
+                <h4>Perguntas Frequentes</h4><br>
+                <p id="Pergunta">
+
+                </p>
+            </div>
+        </section> <br>
+        <section id="contato">
+            <div>
+                <h4>Contato</h4><br>
                 <p>Endereço: Rua Lafaiete, 766. Centro - Ribeirão Preto - SP <br>
                     Telefone: (16) 3605-5599 <br>
                     E-mail: gabran@sga.pucminas.br <br>
                     Atendimento via WhatsApp: (16) 98125-2525 <br>
                 </p>
             </div>
-        </section><br>
-        <section id="FAQ" class="secao4">
-            <h1>Perguntas Frequentes</h1><br>
-            <div id="Pergunta">
-
-            </div>
-        </section>
-        <section id="Mensagem" class="secao4">
             <div>
-                <h1>Envie uma mensagem</h1>
+                <img id="imagem-faleconosco" src="/src/assets/imagens/faleconoscoimg.png" alt="Imagem de atendente">
             </div>
-        </section>
+        <section><br>
+        <section id="mensagem">
+            <div>
+                <h4>Envie uma mensagem</h4><br>
+                <p><input class="informa" type="text" placeholder="Deixe sua mensagem"></p>
+            </div>
+        </section><br>
+        <section>
+            <button id="botao-enviar" class="botao" type="submit">Enviar</button>
+        <section>
     </main>
-    <footer class="rodape-cadastro">
-        <p>Site criado pelo <a href=xxxxxxxx target="_blank">Grupo xxxx</a> para <a href=xxxxxxxxx target="_blank">
+    <footer id="rodape-faleconosco">
+        <p>Site criado pelo <a href=xxxxxxxx target="_blank">Grupo 4</a> para <a href=xxxxxxxxx target="_blank">
                 PUC-MINAS</a></p>
     </footer>
     <script>
         var perg = '';
-        for (i=0; i < db.faq.length; i++) {
-            perg += `Pergunta: ${ db.faq[i].Pergunta } <br> <resp += Resposta="${ db.faq[i].Resposta }"> <br>`;
+        for (i = 0; i < db.faq.length; i++) {
+            perg += `Pergunta: ${db.faq[i].Pergunta} <br> Resposta: ${db.faq[i].Resposta} <br>`;
         }
         document.getElementById('Pergunta').innerHTML = perg;
     </script>
