@@ -1,3 +1,6 @@
+@import url(../styles/home-page.css);
+@import url(../styles/cadastro.css);
+    
     * {
         margin: 0;
         padding: 0;
@@ -120,3 +123,8 @@
         text-align: center;
         padding: 10px;
     }
+
+.rodape a {
+        font-weight: bold;
+        color: white;
+}
