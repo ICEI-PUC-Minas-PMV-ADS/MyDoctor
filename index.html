@@ -7,6 +7,7 @@
     <title>Seja um médido Parceiro</title>
     <link rel="shortcut icon" href="tempsnip.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,10 +23,10 @@
         </section > 
         <section class="secao2">
             <nav class="menu-cabecalho">
-                <a class="menu" href="http://">Quem somos</a>
-                <a class="menu" href="http://">Contatos</a>
-                <a class="menu" href="http://">Seja um médico parceiro</a>
-                <a class="menu" href="http://">Procure o seu médico</a>
+                <a class="menu" href="http://"><i class="fa fa-home"></i> Quem somos</a>
+                <a class="menu" href="http://"><i class="fa-solid fa-at"></i> Contatos</a>
+                <a class="menu" href="http://"> <i class="fa-solid fa-house-medical"></i> Seja um médico parceiro</a>
+                <a class="menu" href="http://"><i class="fa fa-search"></i> Procure o seu médico</a>
             </nav>
         </section>
     </header>
@@ -84,7 +85,7 @@
             <button class="botao" type="button">Editar</button>
             <button class="botao" type="button">Redefinir Senha</button>  
         </section>
-            <div id="res">Resultado</div>
+            <!--<div id="res">Resultado</div>-->
     </main>
     <footer class="rodape">
         <p>Site criado pelo <a href=xxxxxxxx target="_blank">Grupo xxxx</a>  para <a href=xxxxxxxxx target="_blank"> PUC-MINAS</a></p>
@@ -99,7 +100,7 @@
                     var tn6 = window.document.getElementById('txtn6')
                     var tn7 = window.document.getElementById('cbespecialidade')
                     var tn8 = window.document.getElementById('txtn8')
-                    var res = window.document.getElementById('res')
+                    //var res = window.document.getElementById('res')
 
                     var n1 = String(tn1.value)
                     var n2 = String(tn2.value)
@@ -111,8 +112,8 @@
                     var n8 = String(tn8.value)
                  
                     if(n1 && n2 && n3 && n4 && n5 && n6 && n7 && n8 !== ''){
-                        res.innerHTML=` ${n1} + ${n2} + ${n3} + ${n4}+ ${n5} + ${n6} + ${n7} + ${n8}`
-                        window.alert(` ${n1} + ${n2} + ${n3} + ${n4} + ${n5}+ ${n6} + ${n7} + ${n8}`)
+                        //res.innerHTML=` ${n1} + ${n2} + ${n3} + ${n4}+ ${n5} + ${n6} + ${n7} + ${n8}`
+                        window.alert(`Dados registrados ${n1} + ${n2} + ${n3} + ${n4} + ${n5}+ ${n6} + ${n7} + ${n8}`)
                         tn1.value=''
                         tn2.value=''
                         tn3.value=''

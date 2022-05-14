@@ -10,15 +10,16 @@
    
 }
 .cabecalho{
-   margin: 0px;
+    margin: 0px;
+   
  
 }
 .secao1{
     display:flex;
     align-items: center;
     gap: 14vw;
-
     background-color: #978f8f;
+    height: 157px;
 }
 main{
     margin: auto;
@@ -42,7 +43,6 @@ main{
 
 }
 .imagem-cabecalho {
-
     height: 160px;
     width: 95%;
 }
@@ -63,7 +63,7 @@ main{
 }
 .menu{
     color: black;
-    font-size: min(15px, 2.2vw);
+    font-size: min(13.5px, 2.2vw);
     border: 0;
     padding: 5px;
     border-radius: 4px;
@@ -113,6 +113,8 @@ height: 100%;
 background-color:#20b2aa;
 color: white;
 text-align: center;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
   
    
 }
