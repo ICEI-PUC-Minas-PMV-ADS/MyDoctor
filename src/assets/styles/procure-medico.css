@@ -161,7 +161,7 @@ p{
 }
 
 footer{
-    background-color: #20b2aa;
+    background-color: rgb(151, 143, 143);
     color:white;
     font-size: 0.5em;
     position: fixed;
@@ -170,7 +170,7 @@ footer{
 }
 
 footer>p>a{
-    color: black;
+    color: white;
     font-weight: bolder;
 }
 
@@ -182,7 +182,7 @@ footer>p{
 
 footer a:hover{
     text-decoration: underline;
-    color: black;
+    color: white;
 }
 
 
