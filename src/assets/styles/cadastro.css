@@ -1,43 +1,65 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    max-height: 637px;
+}
+
 .cabecalho {
     margin: 0px;
 }
 
 .secao1 {
-    display: flex;
-    align-items: center;
-    gap: 100px;
-
-    background-color: rgb(151, 143, 143);
+    gap: 14vw;
+    height: 157px;
 }
 
-.titulo1 {
-    font-size: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif
+main {
+    margin: auto;
+    min-width: 400px;
+    max-width: 1000px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
 }
 
-.imagem1 {
-    height: 210px;
-    width: 50%;
+.titulo1-cabecalho {
+    font-size: 4.3vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+}
+
+#imagem-mydoctor, #imagem-mydoctor img {
+    width: 100%;
+    height: 280px;
 }
 
 .secao2 {
-    background-color: lightseagreen;
+    background-color: #20b2aa;
     width: 50%;
     border-radius: 4px;
-
+    gap: 1vw;
+    min-width: 483px;
+    max-width: 1360px;
 }
 
-.menu-geral {
+.menu-cabecalho {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 34px;
-
+    gap: 1vw;
 }
 
 .menu {
     color: black;
-    font-size: 14px;
+    font-size: min(13.5px, 2.2vw);
     border: 0;
     padding: 5px;
     border-radius: 4px;
@@ -47,16 +69,22 @@
 }
 
 .menu:hover {
-    background-color: rgb(135, 243, 135);
+    background-color: #87f387;
     color: white
 }
 
-.titulo2 {
+body {
+    background-color: white;
+    height: 100%;
+}
+
+.titulo-corpodapagina {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
-    margin: auto;
-    padding: 35px;
+    margin-top: -10px;
+    padding-bottom: 30px;
     text-align: center;
+
 }
 
 .secao4 {
@@ -66,45 +94,41 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 20px;
-    column-gap: 30px;
+    row-gap: 30px;
+    column-gap: 10px;
 }
 
-.informa {
+.formulario {
     width: 500px;
     height: 30px;
 }
 
-.rodape-cadastro {
-    background-color: rgb(151, 143, 143);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.rodape {
+    background-color: #20b2aa;
     color: white;
     text-align: center;
-    font-size: 1.05em;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    padding: 5px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
-.rodape-cadastro>p>a {
+.rodape>p>a {
     color: white;
     font-weight: bolder;
     text-decoration: none;
 }
 
-.rodape-cadastro a:hover {
+.rodape a:hover {
     text-decoration: underline;
     color: black;
-} 
+}
 
 .botao {
     font-size: 1.2em;
-    background-color: lightseagreen;
+    background-color: #20b2aa;
     border: 0;
-    margin-top: 1.5em;
+    margin-top: 1.0em;
     color: black;
-    padding: 0.2em 0.6em;
+    padding: 0.1em 0.6em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -113,5 +137,5 @@
 
 .botao:hover {
     background-color: rgb(135, 243, 135);
-    color: white
+    color: white;
 }
