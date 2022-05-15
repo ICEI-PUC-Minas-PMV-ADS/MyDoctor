@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/assets/styles/login.css">
-   <title>Login</title>
+    <link rel="shortcut icon" href="tempsnip.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
+    <title>Login</title>
 </head>
+
 <body>
-    <header id="imagem-mydoctor">
-        <img src="/src/assets/imagens/imagem-header.PNG" alt="Cabeçalho My Doctor"> 
-    <nav>
-        <ul class="nav-list">
-            <li><a href="/src/index.html">Quem Somos</a></li>
-            <li><a href="/src/Contatos do site/fale conosco.html">Contato</a></li>
-            <li><a href="/src/Cadastro/cadastro.html">Seja um médico parceiro</a></li>
-            <li><a href="/src/Procure seu médico/procure-medico.html">Procurar seu médico</a></li>
-        </ul>
-    </nav>
-</header>
-<main></main>
-
-<form class="Cadastro" action="">
-    <div class="card">
-        <div class="card-top">
-            <img class="imglogin" src="/src/assets/imagens/user.jpg" alt="">
-            <h3>Já tem cadastro?</h3>
-            <p>Faça seu login!</p>
-        
-            <div class="card-group">
-                <input required type="email" id="email" placeholder="insira email cadastrado">
-            </div>
-
-            <div class="card-group">
-                <input required type="password" id="senha" placeholder="senha">
-                        </div> 
-
-            <div class="card-group">
-                <label> <input type="checkbox">  lembre-me</label>
-            </div> 
-
-            <div class="card-group btn">
-                <button type="submit">Entrar </button>    
-            </div> 
-
-            <div class="card-group">
-                <label> <a href="">Já tenho cadastro </a></label>
-                        <a href="">Esqueci minha senha </a></label>
-            </div>           
+    <header>
+        <div id="imagem-mydoctor">
+            <img src="/src/assets/imagens/imagem-header.PNG" alt="Cabeçalho My Doctor">
         </div>
-    </div>
+        <section class="section-menu-cabecalho">
+            <nav class="menu-cabecalho">
+                <a class="item-menu" href="/src/index.html"><i class="fa fa-home"></i> 
+                    Quem somos</a>
+                <a class="item-menu" href="/src/Contatos do site/fale conosco.html"><i class="fa-solid fa-at"></i>
+                    Contatos</a>
+                <a class="item-menu" href="/src/Cadastro/cadastro.html"> <i class="fa-solid fa-house-medical"></i> 
+                    Seja um médico parceiro</a>
+                <a class="item-menu" href="/src/Procure seu médico/procure-medico.html"><i class="fa fa-search"></i>
+                    Procure o seu médico
+                </a>
+            </nav>
+        </section>
+    </header>
+    <main></main>
 
-   
-</form>
+    <form class="Cadastro" action="">
+        <div class="card">
+            <div class="card-top">
+                <img class="imglogin" src="/src/assets/imagens/user.jpg" alt="">
+                <h3>Já tem cadastro?</h3>
+                <p>Faça seu login!</p>
 
-<footer>
-    <p>Desenvolvido por: Grupo 4</p>
-</footer>
+                <div class="card-group">
+                    <input required type="email" id="email" placeholder="insira email cadastrado">
+                </div>
+
+                <div class="card-group">
+                    <input required type="password" id="senha" placeholder="senha">
+                </div>
+
+                <div class="card-group">
+                    <label> <input type="checkbox"> lembre-me</label>
+                </div>
+
+                <div class="card-group btn">
+                    <button type="submit">Entrar </button>
+                </div>
+
+                <div class="card-group">
+                    <label> <a href="">Já tenho cadastro </a></label>
+                    <a href="">Esqueci minha senha </a></label>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+
+    <footer>
+        <p>Desenvolvido por: Grupo 4</p>
+    </footer>
 
 </body>
+
 </html>

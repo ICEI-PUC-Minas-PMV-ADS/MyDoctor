@@ -151,6 +151,33 @@ h5 {
     color: white;
 }
 
+@media (max-width: 950px) {    
+    .section-menu-cabecalho {
+        display: none;
+        width: 100%;
+    }
+
+    .menu-cabecalho {
+        flex-direction: column;
+    }
+
+    .section-menu-cabecalho.ativo {
+        display: block;
+    }
+
+    .item-menu {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #navbar-mobile {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
+}
+
 @media (max-width: 650px) {
     .container-display-flex {
         flex-direction: column;
@@ -169,25 +196,5 @@ h5 {
         width: 100%;
         display: flex;
         justify-content: center;
-    }
-
-    .item-navbar {
-        height: 60px;
-    }
-
-    #lista-navbar {
-        flex-direction: column;
-        display: none;
-    }
-
-    .item-navbar {
-        height: auto;
-    }
-
-    #navbar-mobile {
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 10px;
     }
 }
