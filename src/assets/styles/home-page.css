@@ -41,12 +41,8 @@ h5 {
     font-size: 20px;
 }
 
-.container-display-flex, #lista-navbar {
+.container-display-flex {
     display: flex;
-}
-
-#lista-navbar.ativo {
-    display: block;
 }
 
 #imagem-mydoctor, #imagem-mydoctor img {
@@ -54,13 +50,34 @@ h5 {
     height: 280px;
 }
 
-.item-navbar {
-    padding: 5px 15px;
-    cursor: pointer;
+.section-menu-cabecalho {
+    background-color: #20b2aa;
+    width: 50%;
+    border-radius: 4px;
+    gap: 1vw;
+}
+
+.menu-cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.item-menu {
+    color: black;
+    font-size: min(13.5px, 2.2vw);
+    border: 0;
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lightseagreen;
+}
+
+.item-menu:hover {
+    background-color: #87f387;
+    color: white
 }
 
 #navbar-mobile {
