@@ -20,9 +20,9 @@ a:hover {
     color: black;
 }
 
-.imagem-cabecalho {
-    height: 100%;
+#imagem-mydoctor, #imagem-mydoctor img {
     width: 100%;
+    height: 280px;
 }
 
 /* Menu Principal*/

@@ -13,10 +13,7 @@
 }
 
 .secao1 {
-    display: flex;
-    align-items: center;
     gap: 14vw;
-    background-color: #978f8f;
     height: 157px;
 }
 
@@ -39,9 +36,9 @@ main {
     display: block;
 }
 
-.imagem-cabecalho {
-    height: 160px;
-    width: 95%;
+#imagem-mydoctor, #imagem-mydoctor img {
+    width: 100%;
+    height: 280px;
 }
 
 .secao2 {
