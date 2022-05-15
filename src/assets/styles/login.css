@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -10,7 +9,6 @@ body {
     font-size: 100%;
     background-color: white;
 }
-
 
 a {
     text-decoration: none;
@@ -28,31 +26,34 @@ a:hover {
 
 /* Menu Principal*/
 
-.nav {
-    display: block;
+.section-menu-cabecalho {
+    background-color: #20b2aa;
+    width: 50%;
+    border-radius: 4px;
+    gap: 1vw;
 }
 
-.menu-principal {
-    list-style: none;
+.menu-cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
 }
 
-.menu-principal li {
-    display: inline-block;
-    background: #20b2aa;
-    padding: 5px 15px;
-    margin-top: 5px;
-    margin-bottom: 15px;
+.item-menu {
+    color: black;
+    font-size: min(13.5px, 2.2vw);
+    border: 0;
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
-    background-color: lightseagreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-li:hover {
-    background: #87f387;
-}
-
-.menu-principal ul {
-    list-style: none;
+.item-menu:hover {
+    background-color: #87f387;
+    color: white;
 }
 
 /* Formulário*/
@@ -61,15 +62,17 @@ li:hover {
     width: 100px;
     margin: auto;
     padding-top: 20px;
+    font-size: 14px;
 }
 
 .card {
     width: 300px;
-    margin: auto;
+    margin: 70px auto auto auto;
     box-shadow: 1px 1px 5px #196F3D;
     background-color: white;
     padding: 30px;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 .card-top {
@@ -109,6 +112,7 @@ li:hover {
 
 button:hover {
     background: #87f387;
+    font-size: 14px;
 }
 
 .imglogin {
@@ -120,4 +124,5 @@ button:hover {
 footer {
     text-align: center;
     padding: 10px;
+    font-size: 14px;
 }
