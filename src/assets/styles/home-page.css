@@ -1,3 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background-color:white;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 h4, h5 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -10,12 +41,8 @@ h5 {
     font-size: 20px;
 }
 
-.container-display-flex, #lista-navbar {
+.container-display-flex {
     display: flex;
-}
-
-#lista-navbar.ativo {
-    display: block;
 }
 
 #imagem-mydoctor, #imagem-mydoctor img {
@@ -23,13 +50,34 @@ h5 {
     height: 280px;
 }
 
-.item-navbar {
-    padding: 5px 15px;
-    cursor: pointer;
+.section-menu-cabecalho {
+    background-color: #20b2aa;
+    width: 50%;
+    border-radius: 4px;
+    gap: 1vw;
+}
+
+.menu-cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.item-menu {
+    color: black;
+    font-size: min(13.5px, 2.2vw);
+    border: 0;
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lightseagreen;
+}
+
+.item-menu:hover {
+    background-color: #87f387;
+    color: white
 }
 
 #navbar-mobile {
@@ -55,6 +103,14 @@ h5 {
     width: 400px;
 }
 
+#sobre {
+    width: 100%;
+}
+
+#sobre div {
+    max-width: 50%;
+}
+
 #sobre, #sobre div, #contato {
     padding: 0 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -62,6 +118,14 @@ h5 {
 
 #sobre p {
     padding-top: 10px;
+}
+
+#valores ul {
+    margin-top: 10px;
+}
+
+#valores ul li {
+    padding: 3px 0;
 }
 
 #contato {
@@ -87,6 +151,33 @@ h5 {
     color: white;
 }
 
+@media (max-width: 950px) {    
+    .section-menu-cabecalho {
+        display: none;
+        width: 100%;
+    }
+
+    .menu-cabecalho {
+        flex-direction: column;
+    }
+
+    .section-menu-cabecalho.ativo {
+        display: block;
+    }
+
+    .item-menu {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #navbar-mobile {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
+}
+
 @media (max-width: 650px) {
     .container-display-flex {
         flex-direction: column;
@@ -105,25 +196,5 @@ h5 {
         width: 100%;
         display: flex;
         justify-content: center;
-    }
-
-    .item-navbar {
-        height: 60px;
-    }
-
-    #lista-navbar {
-        flex-direction: column;
-        display: none;
-    }
-
-    .item-navbar {
-        height: auto;
-    }
-
-    #navbar-mobile {
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 10px;
     }
 }

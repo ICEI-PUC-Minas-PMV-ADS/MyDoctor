@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja um médido Parceiro</title>
+    <link rel="shortcut icon" href="tempsnip.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/assets/styles/cadastro.css">
+    <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <section id="imagem-mydoctor" class="secao1">
+            <img src="/src/assets/imagens/imagem-header.PNG" alt="Cabeçalho My Doctor">
+        </section> 
+        <section class="secao2">
+            <nav class="menu-cabecalho">
+                <a class="menu" href="/src/index.html"><i class="fa fa-home"></i> Quem somos</a>
+                <a class="menu" href="/src/Contatos do site/fale conosco.html"><i class="fa-solid fa-at"></i> Contatos</a>
+                <a class="menu" href="/src/Cadastro/cadastro.html"> <i class="fa-solid fa-house-medical"></i> Seja um médico parceiro</a>
+                <a class="menu" href="/src/Procure seu médico/procure-medico.html"><i class="fa fa-search"></i> Procure o seu médico</a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="secao3">
+            <h1 class="titulo-corpodapagina">Seja um médico parceiro</h1>
+        </section>
+        <section class="secao4">
+            <input class="formulario" type="text" id="txtn1" placeholder="Nome">
+           
+            <input class="formulario" type="text" id="txtn2" placeholder="E-mail">
+
+            <input class="formulario" type="text" id="txtn3" placeholder="Celular-(DDxxxxxxxxx)">
+
+            <input class="formulario" type="text"id="txtn4" placeholder="Cidade">
+
+            <select class="formulario" id="cbestado" type="text">
+                <option value="">Estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <input class="formulario" type="text" id="txtn6" placeholder="Endereço">
+            
+            <select class="formulario" id="cbespecialidade" type="text">
+                <option value="">Especialidade</option>
+                <option value="PD">Pediatria</option>
+                <option value="CA">Cardiologia</option>
+                <option value="GI">Ginecologia</option>
+            </select>
+            <input class="formulario" type="text" id="txtn8" placeholder="CRM">
+             
+        </section>
+        <section class="botoes">
+            <input type="button" class="botao" value="Salvar" onclick="registro()">
+            <button class="botao" type="button">Editar</button>
+            <button class="botao" type="button">Redefinir Senha</button>  
+        </section>
+            <!--<div id="res">Resultado</div>-->
+    </main>
+    <footer class="rodape">
+        <p>Site criado pelo <a href=xxxxxxxx target="_blank">Grupo xxxx</a>  para <a href=xxxxxxxxx target="_blank"> PUC-MINAS</a></p>
+    </footer>
+            <script>
+                function registro(){
+                    var tn1 = window.document.getElementById('txtn1')
+                    var tn2 = window.document.getElementById('txtn2')
+                    var tn3 = window.document.getElementById('txtn3')
+                    var tn4 = window.document.getElementById('txtn4')
+                    var tn5 = window.document.getElementById('cbestado')
+                    var tn6 = window.document.getElementById('txtn6')
+                    var tn7 = window.document.getElementById('cbespecialidade')
+                    var tn8 = window.document.getElementById('txtn8')
+                    //var res = window.document.getElementById('res')
+
+                    var n1 = String(tn1.value)
+                    var n2 = String(tn2.value)
+                    var n3 = String(tn3.value)
+                    var n4 = String(tn4.value)
+                    var n5 = String(tn5.value)
+                    var n6 = String(tn6.value)
+                    var n7 = String(tn7.value)
+                    var n8 = String(tn8.value)
+                 
+                    if(n1 && n2 && n3 && n4 && n5 && n6 && n7 && n8 !== ''){
+                        //res.innerHTML=` ${n1} + ${n2} + ${n3} + ${n4}+ ${n5} + ${n6} + ${n7} + ${n8}`
+                        window.alert(`Dados registrados ${n1} + ${n2} + ${n3} + ${n4} + ${n5}+ ${n6} + ${n7} + ${n8}`)
+                        tn1.value=''
+                        tn2.value=''
+                        tn3.value=''
+                        tn4.value=''
+                        tn5.value=''
+                        tn6.value=''
+                        tn7.value=''
+                        tn8.value=''
+                        tn1.focus()
+                    }else{
+                        if(n1||n2||n3||n4||n5||n6||n7||n8 == null){
+                        window.alert(`Verificar os campos, existe campo vazio`)
+                        }else{
+                        window.alert(`Favor preencher os campus`)  
+                        
+                        }
+                    }      
+                }  
+            </script>        
+</body>
+</html>

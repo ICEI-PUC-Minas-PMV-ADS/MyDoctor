@@ -1,17 +1,14 @@
 var db = {
     faq: [
         {
-            Pergunta: 'O que é uma operadora de plano de saúde?',
-            Resposta: 'Trata-se da pessoa jurídica que disponibiliza para venda e administra os planos privados de assistência à saúde.'
+            Pergunta: 'O que é o "My Doctor"?',
+            Resposta: 'Trata-se de uma plataforma cujo objetivo é que facilitar a busca por médicos, fornecendo informações sobre suas especialidades, locais de atendimento, dentre outras.'
         }, {
-            Pergunta: 'O que é um plano de saúde?',
-            Resposta: 'É um contrato individual ou coletivo que garante a prestação de serviços médicos e odontológicos para assistência à saúde, por tempo indeterminado e sem teto máximo, conforme contratado pelo segurado ou empresa. Os planos de saúde no Brasil são regulamentados pela Agência Nacional de Saúde Suplementar (ANS).'
+            Pergunta: 'Qual a vantagem de ser um médico parceiro?',
+            Resposta: 'Ter acesso a um canal unificado para disponibilização de suas informações profissionais, favorecendo o conhecimento de sua especialidade e uma maior captação de clientes em seus consultórios.'
         }, {
-            Pergunta: 'O que é plano individual ou familiar?',
-            Resposta: 'O plano considerado individual é aquele contratado diretamente por uma pessoa física junto à operadora. Os membros da família podem participar do plano como dependentes, conforme definido no contrato'
-        }, {
-            Pergunta: 'O que é plano coletivo?',
-            Resposta: 'Os planos coletivos são contratados por pessoas jurídicas para funcionários, estatutários e profissionais pertencentes a conselhos, sindicatos, entidades de classe, etc. O plano coletivo pode ser empresarial ou por adesão.'
+            Pergunta: 'Há algum custo ou cobrança para realizar o cadastro ou buscar informações?',
+            Resposta: 'Não. Todas as ferramentas do site são oferecidas de forma totalmente gratuita e acessível a todos.'
         }
     ]
 }
