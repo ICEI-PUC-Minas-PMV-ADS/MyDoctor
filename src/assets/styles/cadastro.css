@@ -103,23 +103,24 @@ body {
     height: 30px;
 }
 
-.rodape {
-    background-color: #20b2aa;
+#rodape-home-page {
+    width: 100%;
+    bottom: 0;
+    margin-top: 30px;
+    font-size: 16.8px;
+    padding: 5px;
+    background-color: rgb(151, 143, 143);
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#rodape-home-page p {
     text-align: center;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
 }
 
-.rodape>p>a {
+#rodape-home-page a {
+    font-weight: bold;
     color: white;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-.rodape a:hover {
-    text-decoration: underline;
-    color: black;
 }
 
 .botao {
