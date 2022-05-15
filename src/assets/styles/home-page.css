@@ -86,6 +86,14 @@ h5 {
     width: 400px;
 }
 
+#sobre {
+    width: 100%;
+}
+
+#sobre div {
+    max-width: 50%;
+}
+
 #sobre, #sobre div, #contato {
     padding: 0 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -93,6 +101,14 @@ h5 {
 
 #sobre p {
     padding-top: 10px;
+}
+
+#valores ul {
+    margin-top: 10px;
+}
+
+#valores ul li {
+    padding: 3px 0;
 }
 
 #contato {
