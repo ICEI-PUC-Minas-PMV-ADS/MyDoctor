@@ -147,11 +147,6 @@ h5 {
     color: white;
 }
 
-#botao-enviar {
-    display: flex;
-    justify-content: center;
-}
-
 #rodape-faleconosco {
     width: 100%;
     margin-top: 30px;
