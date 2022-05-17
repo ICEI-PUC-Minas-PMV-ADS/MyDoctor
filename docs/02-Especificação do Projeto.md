@@ -12,6 +12,17 @@ Além disso, também serão especificados os meios pelos quais o projeto pretend
 
 Abaixo são apresentadas as personas identificadas do projeto.
 
+1- Maria das Dores Miranda tem 75 anos, é dona de casa, do gênero feminino e o seu estado civil é casada. Tem acesso a internet através do celular e utiliza com mais frequência os aplicativos Facebook e WhatsApp. Suas motivações são: Conseguir acompanhamento médico para ter uma melhor qualidade de vida e viver mais tempo com a família. Suas frustrações são: Dificuldade para realizar pesquisas e ausência de ajuda para encontrar médicos. História: Encontra dificuldades em achar indicações de bons médicos, para realizar acompanhamento regular de suas patologias.
+
+2- Jussara de Souza tem 32 anos, é advogada, do gênero feminino e o seu estado civil é solteira. Tem acesso a internet através do celular e computador e utiliza com mais frequência os aplicativos Facebook, WhatsApp , Instagram e LinkedIn. Suas motivações são: Ter uma vida mais saudável. Suas frustrações são: Não consegue dar continuidade ao tratamento por não se adaptar ao médico. História: Sente-se insegura de escolher um médico aleatoriamente para se consultar, inclusive para realizar exames de rotina, além de ter dificuldade em realizar buscas online por ser deficiente visual.
+
+3- Paulo Roberto da Cunha tem 40 anos, é médico, do gênero masculino e o seu estado civil é divorciado. Tem acesso a internet através do celular e computador e utiliza com mais frequência os aplicativos WhatsApp e LinkedIn. Suas motivações são: Tornar sua vida e a das outras pessoas mais fácil e saudável. Suas frustrações são: Ausência de feedback dos pacientes após a consulta, não retorno de alguns pacientes e, em alguns casos, abandono do tratamento. História: Durante suas consultas percebe que alguns pacientes não retornam e não possui meios para saber o porquê.
+
+4- Fábio Araújo Miranda tem 48 anos, é metalúrgico, do gênero masculino e o seu estado civil é casado. Tem acesso a internet através do celular e computador e utiliza com mais frequência os aplicativos WhatsApp, Instagram e Facebook. Suas motivações são: Ter uma melhor qualidade de vida através da melhora da dor. Suas frustrações são: Adiar um procedimento cirúrgico que lhe proporcionaria mais qualidade de vida, devido à falta de confiabilidade em uma equipe médica. História: Precisa realizar uma cirurgia de hérnia, mas tem medo de escolher um médico sem indicação, devido aos riscos envolvidos num procedimento cirúrgico.
+
+5- Gabrieli Lopes Leonel tem 31 anos, é fisioterapeuta, do gênero feminino e o seu estado civil é casada. Tem acesso a internet através do celular e computador e utiliza com mais frequência os aplicativos WhatsApp e Instagram. Suas motivações são: Engravidar no próximo ano. Suas frustrações são: Tem medo de não encontrar um médico confiável. História: Possui planos de engravidar, mas devido às diversas histórias de violência obstétrica, tem receio de escolher médico sem indicação.
+
+6- José Lopes da Silva tem 47 anos, é taxista, do gênero masculino e o seu estado civil é casado. Tem acesso a internet através do celular e utiliza com mais frequência o aplicativo WhatsApp. Suas motivações são: Dar qualidade de vida ao filho mais novo. Suas frustrações são: Está em uma cidade nova, em busca de profissional para dar continuidade a um tratamento já iniciado. História: Mudou-se de cidade recentemente e precisa de tratamento específico para o filho com doença crônica.
 
 ## Histórias de Usuários
 
@@ -81,8 +92,8 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 | RNF-02 | O site deve ser responsivo, permitindo a visualização em um celular, desktop, tablet de forma adequada.| Alta |
 | RNF-03 | O site deve ter bom nível de contraste entre os elementos da tela em conformidade.| Média |
 | RNF-04 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).| Alta |
-| RNF-05 | O arquivo de HTML deve apresentar tags semânticas, como: 'nav', 'header', 'section', 'main', 'section'. Tornando assim o código mais claro para os leitores de tela localizar um conteúdo.| Média |
-| RNF-06 | O arquivo HTML deve apresentar a tag 'img alt' , que mostra a descrição da imagem, possível a leitura da mesma quanto utilizado leitor de tela.| Média |
+| RNF-05 | O arquivo de HTML deve apresentar tags semânticas, como: <nav>/<header>/<section>/<main>/<section>. Tornando assim o código mais claro para os leitores de tela localizar um conteúdo.| Média |
+| RNF-06 | O arquivo HTML deve apresentar a tag <img alt> , que mostra a descrição da imagem, possível a leitura da mesma quanto utilizado leitor de tela.| Média |
 | RNF-07 | O desenvolvimento deve ser em HTML, CSS, Javascript, podendo utilizar frameworks.| Média |
 
 ## Restrições
