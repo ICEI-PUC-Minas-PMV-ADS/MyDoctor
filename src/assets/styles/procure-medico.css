@@ -12,29 +12,7 @@ body{
 
 #imagem-mydoctor, #imagem-mydoctor img {
     width: 100%;
-    height: 280px;
-}
-
-.secao1{
-    display: flex;
-    align-items: center;
-    background-color: #978f8f;
-}
-
-.imgs0{
-    left: 0px; /*posiciona a 0px para a esquerda*/
-    top: 0px; /*posiciona a 0px para baixo*/
-    height: 200px;
-    width: 50%;
-}
-
-.tit_1{
-    display: block;
-    position: absolute;
-    right: 70px;
-    top: 30px;
-    font-size: 90px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 240px;
 }
 
 .section-menu-cabecalho {
@@ -132,13 +110,13 @@ p{
 .flex-container{
     display: flex;
     float: right;
-    transform: translateY(-100%);
+    transform: translateY(-110%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
-    padding: 10px;
+    padding: 11px;
     margin: 70px 10px 10px 10px;
     border: 12px solid #978f8f;
-    width: 48%;
+    width: 47%;
 
     /*ALINHAMENTO DO EIXO PRINCIPAL*/
     justify-content: space-evenly;
@@ -150,7 +128,7 @@ p{
 .flex-container>div{
     background-color: white;
     text-align: center;
-    line-height: 20px;
+    line-height: 21px;
     font-size: 15px;
 }
 
