@@ -134,6 +134,7 @@ h5 {
 
 #rodape-home-page {
     width: 100%;
+    bottom: 0;
     margin-top: 30px;
     font-size: 16.8px;
     padding: 5px;
