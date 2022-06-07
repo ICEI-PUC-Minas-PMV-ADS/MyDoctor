@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="cadastro - Copia.css">
     <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
    
 </head>
 
@@ -34,7 +35,7 @@
         <section id="msgSuccess"></section>
         <section class="secao4">
             <section class="label-float">
-                <input class="formulario" type="text" id="txtn1" placeholder=""required>
+                <input class="formulario" type="text" id="txtn1" placeholder="" required="required">
                 <label id="labelnome" for="txtn1">Nome</label>
             </section>
             <section class="label-float">
@@ -43,7 +44,7 @@
             </section>
             <section class="label-float">
                 <input class="formulario" type="text"  id="txtn3" placeholder="" required>
-                <label id="labelcelular" for="txtn3">Celular-(xxxxxxxxxxx)</label>
+                <label id="labelcelular" for="txtn3">DDD + n° do celular</label>
             </section>
             <section class="label-float">
                 <input class="formulario" type="text"id="txtn4" placeholder=""required>
@@ -55,7 +56,7 @@
             </section>
             <section class="label-float">
                 <input class="formulario" type="text" id="txtn6" placeholder=""required>
-                <label id="labelestado" for="txtn5">Estado</label>
+                <label id="labelestado" for="txtn6">Estado</label>
             </section>
             <section class="label-float">
                 <input class="formulario" type="text" id="txtn7" placeholder=""required>
@@ -73,8 +74,8 @@
         </section>
         <section class="botoes">
             <input type="button" class="botao" value="Salvar" onclick="cadastrar()">
-            <button class="botao" type="button">Editar</button>
-            <button class="botao" type="button">Redefinir Senha</button>  
+            <!--<button class="botao" type="button">Editar</button>
+            <button class="botao" type="button">Redefinir Senha</button>  -->
         </section>
           
     </main>
@@ -169,20 +170,20 @@
         let validsenha = false
         let msgError =document.querySelector("#msgError")
         let msgSuccess =document.querySelector("#msgSuccess")
-
-        
-
-        
-
+        var codDD =[11,12,13,14,15,16,17,18,19,21,24,27,28,31,32,33,34,35,37,38,41,42,43,44,45,46,47,48,49,51,53,54,55,61,62,64,63,65,66,67,68,69,71,73,74,75,77,79,81,82,83,84,85,86,87,88,89,91,92,93,94,95,96,97,98,99];
+    
         
 
         nome.addEventListener('keyup', ()=>{
-            if(nome.value.length<3){
+            if(nome.value.length<3 ){
                 labelnome.setAttribute('style','color:red')
                 labelnome.innerHTML='Nome *Insira no mínimo 3 caracteres'
                 nome.setAttribute('style','border-color:red')
                 validnome = false
-        
+
+            
+            
+                
         
             } else {
                 labelnome.setAttribute('style','color:green')
@@ -229,15 +230,25 @@
             }
         })
 
+
+        
+
         celular.addEventListener('keyup', ()=>{
-            if(celular.value.length!==11){
+            
+            if( isNaN(celular.value) || celular.value.length!==11 || codDD.indexOf(parseInt(celular.value.substr(0,2)))==-1){
                 labelcelular.setAttribute('style','color:red')
-                labelcelular.innerHTML='Celular *Insira apenas números, são 11 dígitos (DD + número)'
+                labelcelular.innerHTML='Celular *Insira apenas números válidos, são 11 dígitos (DDD + número)'
+                celular.setAttribute('style','border-color:red')
+                validcelular = false
+
+            if( codDD.indexOf(parseInt(celular.value.substr(0,2)))==-1){
+                labelcelular.setAttribute('style','color:red')
+                labelcelular.innerHTML='Celular *dd Inválido'
                 celular.setAttribute('style','border-color:red')
                 validcelular = false
         
         
-            } else {
+            }} else {
                 labelcelular.setAttribute('style','color:green')
                 labelcelular.innerHTML='Celular'
                 celular.setAttribute('style','border-color:green')
@@ -253,7 +264,6 @@
         
             }
         })
-
         cidade.addEventListener('keyup', ()=>{
             if(cidade.value.length<=3){
                 labelcidade.setAttribute('style','color:red')
@@ -395,6 +405,44 @@
                 validsenha = false
             }
         })
+        
+
+        var inputNome = document.querySelector("#txtn1");
+        txtn1.addEventListener("keypress", function(e) {
+        var keyCode = (e.keyCode ? e.keyCode : e.which);
+  
+        if (keyCode > 47 && keyCode < 58) {
+            e.preventDefault();
+        }
+        });
+
+        var inputcidade = document.querySelector("#txtn4");
+        txtn4.addEventListener("keypress", function(e) {
+        var keyCode = (e.keyCode ? e.keyCode : e.which);
+  
+        if (keyCode > 47 && keyCode < 58) {
+            e.preventDefault();
+        }
+        });
+
+        var inputestado = document.querySelector("#txtn6");
+        txtn6.addEventListener("keypress", function(e) {
+        var keyCode = (e.keyCode ? e.keyCode : e.which);
+  
+        if (keyCode > 47 && keyCode < 58) {
+            e.preventDefault();
+        }
+        });
+
+        var inputesp = document.querySelector("#txtn7");
+        txtn7.addEventListener("keypress", function(e) {
+        var keyCode = (e.keyCode ? e.keyCode : e.which);
+  
+        if (keyCode > 47 && keyCode < 58) {
+            e.preventDefault();
+        }
+        });
+
 
         function cadastrar(){
             if(validnome && validemail && validsenha && validcelular && validcidade && validendereco && validestado && validesp && validcrm && validsenha ){
