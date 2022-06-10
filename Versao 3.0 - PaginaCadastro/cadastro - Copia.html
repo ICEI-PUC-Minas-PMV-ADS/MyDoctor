@@ -9,12 +9,20 @@
     <link rel="stylesheet" href="cadastro - Copia.css">
     <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="lista.js"></script>
 
    
 </head>
 
 <body>
     <header class="cabecalho">
+        <div id="navbar-mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
         <section id="imagem-mydoctor" class="secao1">
             <img src="Capturar - Copia.PNG" alt="Cabeçalho My Doctor">
         </section> 
@@ -406,7 +414,6 @@
             }
         })
         
-
         var inputNome = document.querySelector("#txtn1");
         txtn1.addEventListener("keypress", function(e) {
         var keyCode = (e.keyCode ? e.keyCode : e.which);
@@ -415,29 +422,23 @@
             e.preventDefault();
         }
         });
-
         var inputcidade = document.querySelector("#txtn4");
         txtn4.addEventListener("keypress", function(e) {
         var keyCode = (e.keyCode ? e.keyCode : e.which);
-  
         if (keyCode > 47 && keyCode < 58) {
             e.preventDefault();
         }
         });
-
         var inputestado = document.querySelector("#txtn6");
         txtn6.addEventListener("keypress", function(e) {
         var keyCode = (e.keyCode ? e.keyCode : e.which);
-  
         if (keyCode > 47 && keyCode < 58) {
             e.preventDefault();
         }
         });
-
         var inputesp = document.querySelector("#txtn7");
         txtn7.addEventListener("keypress", function(e) {
         var keyCode = (e.keyCode ? e.keyCode : e.which);
-  
         if (keyCode > 47 && keyCode < 58) {
             e.preventDefault();
         }
