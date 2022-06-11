@@ -124,7 +124,17 @@ h5 {
     margin-bottom: 30px;
 }
 
-.informa {
+.informanome {
+    width: 500px;
+    height: 30px;
+}
+
+.informaemail {
+    width: 500px;
+    height: 30px;
+}
+
+.informamensagem {
     width: 500px;
     height: 100px;
 }
