@@ -1,0 +1,130 @@
+@import url(../styles/home-page.css);
+@import url(../styles/cadastro.css);
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body {
+        font-size: 100%;
+        background-color:white;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: black;
+    }
+
+    .imagem-cabecalho {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Menu Principal*/
+    
+    .nav {
+        display: block;
+    }
+
+    .menu-principal{
+        list-style: none;
+    }
+
+    .menu-principal li {
+        display: inline-block;
+        background: #20b2aa;
+        padding: 5px 15px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: lightseagreen;
+    }
+
+    li:hover {
+        background: #87f387;
+    }
+   
+    .menu-principal ul {
+        list-style: none;  
+    }
+
+    /* Formulário*/
+  
+    .form {
+        width: 100px;
+        margin: auto;
+        padding-top: 20px;
+    }
+    
+    .card {
+        width: 300px;
+        margin: auto;
+        box-shadow: 1px 1px 5px #196F3D;
+        background-color: white;
+        padding: 30px;
+        border-radius: 5px;
+    }
+           
+    .card-top{
+        text-align: center;
+    }
+    .card-group{
+        margin-top: 10px;
+    }
+
+    .card-group > label{
+        width: 100%;
+        display: block;
+    }
+         
+    .card-group > input{
+            outline: 0;
+            width: 100%;
+            padding: 5px;
+            padding-left: 30px;
+            height: 30px;
+            border: none;
+            border-bottom: 1px solid gray;
+    }
+    
+    .card-group > button {
+        background-color: #20b2aa;
+        border-radius: 30px;
+        width: 100%;
+        padding: 10px;
+        border: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        outline: none;
+    }
+
+     button:hover {
+         background: #87f387;
+     }
+    
+    .imglogin{
+        border-radius: 50px;
+        width: 100px;
+        box-shadow: 0px 0px 5px gainsboro;
+    }
+    
+    footer{
+        text-align: center;
+        padding: 10px;
+    }
+
+.rodape a {
+        font-weight: bold;
+        color: white;
+}

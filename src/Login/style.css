@@ -1,0 +1,107 @@
+    * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: relative;   
+        }
+
+    a {
+       text-decoration: none;
+    }
+
+    .imgcapa {
+        background-color: #978f8f;
+        padding: auto;
+        font-size: 100px;
+        font-display: center;
+    
+    }
+    
+
+    .nav {
+        display: block;
+    }
+
+    .nav-list{
+        list-style: none;
+    }
+
+    .nav-list li {
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+        background: #20b2aa;
+    }
+
+    li:hover {
+        background: #87f387;
+    }
+   
+    .nav-list ul {
+        list-style: none;  
+    }
+  
+    .form {
+        width: 100px;
+        margin: auto;
+        padding-top: 40px;
+    }
+    
+    .card {
+        width: 300px;
+        margin: auto;
+        box-shadow: 1px 1px 5px #196F3D;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;S
+    }
+    
+    .card-top{
+        text-align: center;
+    }
+       
+    .card-group{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    
+    }
+    
+    .card-group > label{
+        width: 100%;
+        display: block;
+        }
+        
+    .card-group > input{
+            border-radius: 5px;
+            outline: 0;
+            width: 100%;
+            padding: 5x;
+            height: 20px;
+    }
+    
+    .card-group > button{
+        background-color: #20b2aa;
+        border-radius: 30px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 16px;
+        border: 0px;
+        text-decoration: nonwee;
+        outline: none;
+     }
+
+     button:hover {
+         background: #87f387;
+     }
+    
+    .imglogin{
+        border-radius: 50px;
+        width: 100px;
+        box-shadow: 0px 0px 5px gainsboro;
+    }
+    
+    footer{
+        text-align: center;
+        padding: 10px;
+    }
