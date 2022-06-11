@@ -16,6 +16,36 @@
     gap: 14vw;
     height: 157px;
 }
+#navbar-mobile {
+    display: none;
+}
+@media (max-width: 950px) {    
+    .secao2{
+        display: none;
+        width: 100%;
+    }
+
+    .menu-cabecalho {
+        flex-direction: column;
+    }
+
+    .secao2.ativo {
+        display: block;
+    }
+
+    .menu {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #navbar-mobile {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
+}
+
 
 main {
     margin: auto;

@@ -10,4 +10,3 @@ window.onload = () => {
         itensMenu.classList.toggle("ativo");
     });
   }
-  
