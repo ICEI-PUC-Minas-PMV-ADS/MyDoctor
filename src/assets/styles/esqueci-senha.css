@@ -98,6 +98,10 @@ li:hover {
     margin: 10px 0;
 }
 
+.input-checkbox-mostrar-senha {
+    margin: 10px;
+}
+
 .card-group>button, .btn-nova-senha {
     background-color: #20b2aa;
     border-radius: 30px;
