@@ -50,7 +50,7 @@ ul {
 
 .secao3{
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 .tit_1{
@@ -124,7 +124,6 @@ p{
 #container{
     display: flex;
     position: relative;
-    transform: translateY(-10%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
     padding: 20px;
@@ -153,7 +152,6 @@ footer{
     background-color: rgb(151, 143, 143);
     color:white;
     font-size: 0.5em;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }

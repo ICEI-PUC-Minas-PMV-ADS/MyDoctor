@@ -92,7 +92,6 @@ const exibirDadosMedicoCidade = cidade => {
 
       container.appendChild(listaDadosMedico);
       container.style.display = "block";
-      containerProcureMedico.style.height = "auto";
     } else {
       exibirMensagemErroCidade(MENSAGEM_CIDADE_NAO_ENCONTRADA);
     }
@@ -125,11 +124,13 @@ const exibirMensagemErroCidade = mensagem => {
   mensagemCidadeInvalida.innerHTML = mensagem;
   mensagemCidadeInvalida.style.display = "block";
   mensagemCidadeInvalida.style.color = "red";
+  container.style.display = "none";
 }
 
 const exibirMensagemErroEspecialidade = mensagem => {
   mensagemEspecialidadeInvalida.innerHTML = mensagem;
   mensagemEspecialidadeInvalida.style.display = "block";
   mensagemEspecialidadeInvalida.style.color = "red";
+  container.style.display = "none";
 }
 
