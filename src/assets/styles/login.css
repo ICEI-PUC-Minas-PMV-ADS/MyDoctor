@@ -140,3 +140,20 @@ button:hover {
     font-weight: bold;
     color: white;
 }
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    }
+    #msgSuccess{
+    text-align: center;
+    color:green;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    }

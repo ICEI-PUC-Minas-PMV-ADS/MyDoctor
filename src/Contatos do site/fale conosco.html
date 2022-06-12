@@ -29,7 +29,7 @@
                 <nav>
                     <ul id="lista-navbar">
                         <a href="#sobre">
-                            <li class="item-navbar"><a href="/src/index.html"><i class="fa fa-home"></i>
+                            <li class="item-navbar"><a href="/index.html"><i class="fa fa-home"></i>
                                     Quem somos
                             </li>
                         </a>
@@ -48,6 +48,12 @@
                                 Procure seu médico
                             </li>
                         </a>
+                        <a href="/src/Login/login.html">
+                            <li class=" item-navbar"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                Login
+                            </li>
+                        </a>
+
                     </ul>
                 </nav>
     </header>
@@ -76,8 +82,12 @@
         <section id="mensagem">
             <div>
                 <h4>Envie uma mensagem</h4><br>
-                <p><input class="informa" type="text" placeholder="Deixe sua mensagem"></p>
-                <button id="botao-enviar" class="botao" type="submit">Enviar</button>
+            <form id="insert_form">
+                <p><input id="nomeUsuario" class="informanome" type="text" name="nome"  placeholder="Nome"></p><br>
+                <p><input id="emailUsuario" class="informaemail" type="text" name="email" placeholder="E-mail"></p><br>
+                <p><input id="mensagemUsuario" class="informamensagem" type="text" name="mensagem" placeholder="Deixe sua mensagem"></p>
+                <input type="submit" name="botao-enviar" id="botao-enviar" value="Enviar" class="botao" onclick="enviarMensagem(event)">
+            </form>
             </div>
         </section>
     </main>
@@ -92,6 +102,7 @@
         }
         document.getElementById('Pergunta').innerHTML = perg;
     </script>
+    <script src="/src/Contatos do site/mensagens.js"></script>
 </body>
 
 </html>

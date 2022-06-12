@@ -8,19 +8,29 @@
     <link rel="shortcut icon" href="tempsnip.ico" type="image/x-icon">
     <link rel="stylesheet" href="/src/assets/styles/cadastro.css">
     <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
 </head>
 
 <body>
     <header class="cabecalho">
+        <div id="navbar-mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
         <section id="imagem-mydoctor" class="secao1">
-            <img src="/src/assets/imagens/imagem-header.PNG" alt="Cabeçalho My Doctor">
+            <img src="/src/assets/imagens/Capturar.PNG" alt="Cabeçalho My Doctor">
         </section> 
         <section class="secao2">
             <nav class="menu-cabecalho">
-                <a class="menu" href="/src/index.html"><i class="fa fa-home"></i> Quem somos</a>
+                <a class="menu" href="/index.html"><i class="fa fa-home"></i> Quem somos</a>
                 <a class="menu" href="/src/Contatos do site/fale conosco.html"><i class="fa-solid fa-at"></i> Contatos</a>
                 <a class="menu" href="/src/Cadastro/cadastro.html"> <i class="fa-solid fa-house-medical"></i> Seja um médico parceiro</a>
                 <a class="menu" href="/src/Procure seu médico/procure-medico.html"><i class="fa fa-search"></i> Procure o seu médico</a>
+                <a class="menu" href="/src/Login/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a>
             </nav>
         </section>
     </header>
@@ -28,105 +38,59 @@
         <section class="secao3">
             <h1 class="titulo-corpodapagina">Seja um médico parceiro</h1>
         </section>
+        <section id="msgError"></section>
+        <section id="msgSuccess"></section>
         <section class="secao4">
-            <input class="formulario" type="text" id="txtn1" placeholder="Nome">
-           
-            <input class="formulario" type="text" id="txtn2" placeholder="E-mail">
-
-            <input class="formulario" type="text" id="txtn3" placeholder="Celular-(DDxxxxxxxxx)">
-
-            <input class="formulario" type="text"id="txtn4" placeholder="Cidade">
-
-            <select class="formulario" id="cbestado" type="text">
-                <option value="">Estado</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-            </select>
-            <input class="formulario" type="text" id="txtn6" placeholder="Endereço">
-            
-            <select class="formulario" id="cbespecialidade" type="text">
-                <option value="">Especialidade</option>
-                <option value="PD">Pediatria</option>
-                <option value="CA">Cardiologia</option>
-                <option value="GI">Ginecologia</option>
-            </select>
-            <input class="formulario" type="text" id="txtn8" placeholder="CRM">
-             
+            <section class="label-float">
+                <input class="formulario" type="text" id="txtn1" placeholder="" required="required">
+                <label id="labelnome" for="txtn1">Nome</label>
+            </section>
+            <section class="label-float">
+                <input class="formulario" type="text" id="txtn2" placeholder=""required>
+                <label id="labelemail" for="txtn2">E-mail</label>
+            </section>
+            <section class="label-float">
+                <input class="formulario" type="text"  id="txtn3" placeholder="" required>
+                <label id="labelcelular" for="txtn3">DDD + n° do celular</label>
+            </section>
+            <section class="label-float">
+                <input class="formulario" type="text"id="txtn4" placeholder=""required>
+                <label id="labelcidade" for="txtn4">Cidade</label>
+            </section>
+            <section class="label-float">
+                <input class="formulario" type="text" id="txtn5" placeholder=""required>
+                <label id="labelendereço" for="txtn5">Endereço</label>
+            </section>
+            <section class="label-float">
+                <input class="formulario" type="text" id="txtn6" placeholder=""required>
+                <label id="labelestado" for="txtn6">Estado</label>
+            </section>
+            <section class="label-float">
+                <input class="formulario" type="text" id="txtn7" placeholder=""required>
+                <label id="labelespe" for="txtn7">Especialidade</label>
+            </section>
+            <section class="label-float">
+                <input class="formulario" type="text" id="txtn8" placeholder=""required>
+                <label id="labelcrm" for="txtn8">CRM</label>
+            </section>  
+            <section class="label-float">
+                <input class="formulario" type="password" id="txtn9" placeholder=""required>
+                <label id="labelsenha" for="txtn9">Senha</label>
+                <i id="versenha" class="fa fa-eye" aria-hidden="true"></i>
+            </section>   
         </section>
         <section class="botoes">
-            <input type="button" class="botao" value="Salvar" onclick="registro()">
-            <button class="botao" type="button">Editar</button>
-            <button class="botao" type="button">Redefinir Senha</button>  
+            <input type="button" class="botao" value="Salvar" onclick="cadastrar()">
+            <!--<button class="botao" type="button">Editar</button>
+            <button class="botao" type="button">Redefinir Senha</button>  -->
         </section>
-            <!--<div id="res">Resultado</div>-->
+          
     </main>
     <footer id="rodape-home-page">
         <p>Site criado pelo <a href="#" target="_blank">Grupo 4</a> para <a href="#" target="_blank"> PUC-MINAS</a>
         </p>
     </footer>
-            <script>
-                function registro(){
-                    var tn1 = window.document.getElementById('txtn1')
-                    var tn2 = window.document.getElementById('txtn2')
-                    var tn3 = window.document.getElementById('txtn3')
-                    var tn4 = window.document.getElementById('txtn4')
-                    var tn5 = window.document.getElementById('cbestado')
-                    var tn6 = window.document.getElementById('txtn6')
-                    var tn7 = window.document.getElementById('cbespecialidade')
-                    var tn8 = window.document.getElementById('txtn8')
-                    //var res = window.document.getElementById('res')
-
-                    var n1 = String(tn1.value)
-                    var n2 = String(tn2.value)
-                    var n3 = String(tn3.value)
-                    var n4 = String(tn4.value)
-                    var n5 = String(tn5.value)
-                    var n6 = String(tn6.value)
-                    var n7 = String(tn7.value)
-                    var n8 = String(tn8.value)
-                 
-                    if(n1 && n2 && n3 && n4 && n5 && n6 && n7 && n8 !== ''){
-                        //res.innerHTML=` ${n1} + ${n2} + ${n3} + ${n4}+ ${n5} + ${n6} + ${n7} + ${n8}`
-                        window.alert(`Dados registrados ${n1} + ${n2} + ${n3} + ${n4} + ${n5}+ ${n6} + ${n7} + ${n8}`)
-                        tn1.value=''
-                        tn2.value=''
-                        tn3.value=''
-                        tn4.value=''
-                        tn5.value=''
-                        tn6.value=''
-                        tn7.value=''
-                        tn8.value=''
-                        tn1.focus()
-                    }else{
-                        if(n1||n2||n3||n4||n5||n6||n7||n8 == null){
-                        window.alert(`Verificar os campos, existe campo vazio`)
-                        }else{
-                        window.alert(`Favor preencher os campus`)  
-                        
-                        }
-                    }      
-                }  
-            </script>        
+    <script src="interacao1.js"></script>
+    <script src="lista2.js"></script>
 </body>
 </html>

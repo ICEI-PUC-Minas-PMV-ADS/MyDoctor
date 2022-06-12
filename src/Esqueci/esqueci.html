@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,52 +9,60 @@
     <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
     <title>Esqueci Minha Senha</title>
 </head>
-   <main>
-<body>
-    <header id="imagem-mydoctor">
-        <img src="/src/assets/imagens/cabecalho.PNG" alt="Logo site My Doctor">            
-    <section>
-        <a class="logo" href="/"></a>
-        <ul class="menu-principal">
-            
-            <li><a href="/src/index.html"><i class="fa fa-home"></i> Quem Somos</a></li>
-            <li><a href="/src/Contatos do site/fale conosco.html"><i class="fa-solid fa-at"></i> Contato</a></li>
-            <li><a href="/src/Cadastro/cadastro.html"><i class="fa-solid fa-house-medical"></i> Seja um médico parceiro</a></li>
-            <li><a href="/src/Procure seu médico/procure-medico.html"><i class="fa fa-search"></i> Procurar seu médico</a></li>
-        </ul>
-        </section>    
-    <nav>
-    </nav>
-</header>
-<form class="Cadastro" action="">
-    <div class="card">
-        <div class="card-top">
-            <img class="imglogin" src="/src/assets/imagens/user.jpg" alt="">
-            <h3>Esqueci minha senha!</h3>
-            <p>Calma! Vamos te ajudar com isso!</p>
-        
-            <div class="card-group">
-                <input required type="email" id="email" placeholder = "insira email cadastrado">
+<main>
+
+    <body>
+        <header id="imagem-mydoctor">
+            <img src="/src/assets/imagens/cabecalho.PNG" alt="Logo site My Doctor">
+            <section>
+                <a class="logo" href="/"></a>
+                <ul class="menu-principal">
+
+                    <li><a href="/index.html"><i class="fa fa-home"></i> Quem Somos</a></li>
+                    <li><a href="/src/Contatos do site/fale conosco.html"><i class="fa-solid fa-at"></i> Contato</a>
+                    </li>
+                    <li><a href="/src/Cadastro/cadastro.html"><i class="fa-solid fa-house-medical"></i> Seja um médico
+                            parceiro</a></li>
+                    <li><a href="/src/Procure seu médico/procure-medico.html"><i class="fa fa-search"></i> Procurar seu
+                            médico</a></li>
+                    <li><a href="/src/Login/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
+                </ul>
+            </section>
+            <nav>
+            </nav>
+        </header>
+        <form id="container-esqueci-senha" class="Cadastro">
+            <div class="card">
+                <div class="card-top">
+                    <img class="imglogin" src="/src/assets/imagens/user.jpg" alt="Imagem usuário">
+                    <h3>Esqueci minha senha!</h3>
+                    <p>Calma! Vamos te ajudar com isso!</p>
+
+                    <div class="card-group">
+                        <input required type="email" id="email" placeholder="Insira email cadastrado">
+                    </div>
+
+                    <div id="mensagem-email-invalido"></div>
+                    <div id="container-nova-senha"></div>
+
+                    <div class="card-group btn">
+                        <button id="botao-redefinir-senha" type="submit">Enviar</button>
+                    </div>
+
+                    <div class="card-group">
+                        <label> <a href="/src/Login/login.html">Já possui conta? Login</a></label>
+                        <a href="/src/Cadastro/cadastro.html"> Não possui conta? Cadastre-se </a></label>
+                    </div>
+                </div>
             </div>
+        </form>
 
-            <div class="card-group btn">
-                <button type="submit">Enviar 
-                <i class="fa-solid fa-envelope"></i>
-                </button> 
-            </div> 
-
-            <div class="card-group">
-                <label> <a href="">Já possui conta? Login</a></label>
-                        <a href=""> Não possui conta? Cadastre-se </a></label>
-            </div>                  
-        </div>
-    </div>
-</form>
-
-<footer id="rodape-home-page">
-    <p>Site criado pelo <a href="#" target="_blank">Grupo 4</a> para <a href="#" target="_blank"> PUC-MINAS</a>
-    </p>
-</footer>
+        <footer id="rodape-home-page">
+            <p>Site criado pelo <a href="#" target="_blank">Grupo 4</a> para <a href="#" target="_blank"> PUC-MINAS</a>
+            </p>
+        </footer>
 </main>
+<script src="esqueci-senha.js"></script>
 </body>
+
 </html>

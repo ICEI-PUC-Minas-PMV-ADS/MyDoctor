@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/src/assets/styles/login.css">
     <link rel="shortcut icon" href="tempsnip.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
+  
+    
     <title>Login</title>
 </head>
 
@@ -18,21 +20,27 @@
         </div>
         <section class="section-menu-cabecalho">
             <nav class="menu-cabecalho">
-                <a class="item-menu" href="/src/index.html"><i class="fa fa-home"></i> 
+                <a class="item-menu" href="/index.html"><i class="fa fa-home"></i> 
                     Quem somos</a>
                 <a class="item-menu" href="/src/Contatos do site/fale conosco.html"><i class="fa-solid fa-at"></i>
                     Contatos</a>
                 <a class="item-menu" href="/src/Cadastro/cadastro.html"> <i class="fa-solid fa-house-medical"></i> 
                     Seja um médico parceiro</a>
                 <a class="item-menu" href="/src/Procure seu médico/procure-medico.html"><i class="fa fa-search"></i>
-                    Procure o seu médico
+                    Procure o seu médico</a>
+                <a class="item-menu" href="/src/Login/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    Login</a>
                 </a>
             </nav>
         </section>
     </header>
-    <main></main>
+    <main> 
+        <section id="msgError">     
+        </section>
 
-    <form class="Cadastro" action="">
+    </main>
+
+    <form id="login-form">
         <div class="card">
             <div class="card-top">
                 <img class="imglogin" src="/src/assets/imagens/user.jpg" alt="">
@@ -40,11 +48,11 @@
                 <p>Faça seu login!</p>
 
                 <div class="card-group">
-                    <input required type="email" id="email" placeholder="insira email cadastrado">
+                    <input required type="text" id="email" placeholder=""required>
                 </div>
 
                 <div class="card-group">
-                    <input required type="password" id="senha" placeholder="senha">
+                    <input required type="password" id="senha" placeholder=""required>
                 </div>
 
                 <div class="card-group">
@@ -52,12 +60,13 @@
                 </div>
 
                 <div class="card-group btn">
-                    <button type="submit">Entrar </button>
+                    <button onclick="entrar(event)" class="btn btn-dark btn-md btn-block">Entrar </button>
                 </div>
+                <!-- Criei aqui uma função de click (onclick). Dentro dela há a função que
+                vai receber os dados do usuário quando ele clicar (userLogin)-->
 
                 <div class="card-group">
-                    <label> <a href="">Já tenho cadastro </a></label>
-                    <a href="">Esqueci minha senha </a></label>
+                    <label> <a href="/src/Esqueci/esqueci.html">Esqueci minha senha </a></label>
                 </div>
             </div>
         </div>
@@ -69,7 +78,7 @@
         <p>Site criado pelo <a href="#" target="_blank">Grupo 4</a> para <a href="#" target="_blank"> PUC-MINAS</a>
         </p>
     </footer>
-
+    <script src="integracao.js"></script>
 </body>
 
 </html>
