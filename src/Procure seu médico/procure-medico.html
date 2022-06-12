@@ -33,17 +33,17 @@
     <main class="corpo">
         <section class="secao3">
             <h2 class="tit_1">Procure o seu médico</h2>
-            <h3 class="tit_2">Pela região:</h3>
+            <h3 class="tit_2">Pela cidade:</h3>
             <div id="Busca">
-                <input type="text" placeholder="Escreva o nome de sua região" />
-                <input type="button" name="botao-buscar" id="botao-buscar" value="Buscar"
+                <input type="text" id="cidade" onchange="changeCidade(event)" placeholder="Escreva o nome de sua cidade" />
+                <input type="button" name="botao-buscar" id="botao-buscar-cidade" value="Buscar"
                 class="botoes" onclick="pesquisarMedicos(event)" />
             </div>
             <p>Ou</p>
             <h3 class="tit_3">Pela especialidade:</h3>
             <div id="Busca2">
-                <input type="text" placeholder="Escreva o nome da especialidade" />
-                <input type="button" name="botao-buscar" id="botao-buscar2" value="Buscar"
+                <input type="text" id="especialidade" onchange="changeEspecialidade(event)" placeholder="Escreva o nome da especialidade" />
+                <input type="button" name="botao-buscar" id="botao-buscar-especialidade" value="Buscar"
                 class="botoes" onclick="pesquisarMedicos(event)" />
             </div>
         </section>
