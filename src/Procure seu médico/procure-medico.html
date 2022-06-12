@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="/src/assets/styles/procure-medico.css">
     <link rel="shortcut icon" href="tempsnip.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
-    <script src="procure-medico.js" href="/src/Procure seu médico/procure-medico.js"></script>
-    </head>
+</head>
 
 <body>
     <header class="cabecalho">
@@ -36,15 +35,15 @@
             <h3 class="tit_2">Pela cidade:</h3>
             <div id="Busca">
                 <input type="text" id="cidade" onchange="changeCidade(event)" placeholder="Escreva o nome de sua cidade" />
-                <input type="button" name="botao-buscar" id="botao-buscar-cidade" value="Buscar"
-                class="botoes" onclick="pesquisarMedicos(event)" />
+                <p id="cidade-invalida"></p>
+                <input type="button" id="botao-buscar-cidade" value="Buscar" class="botoes" />
             </div>
             <p>Ou</p>
             <h3 class="tit_3">Pela especialidade:</h3>
             <div id="Busca2">
                 <input type="text" id="especialidade" onchange="changeEspecialidade(event)" placeholder="Escreva o nome da especialidade" />
-                <input type="button" name="botao-buscar" id="botao-buscar-especialidade" value="Buscar"
-                class="botoes" onclick="pesquisarMedicos(event)" />
+                <p id="especialidade-invalida"></p>
+                <input type="button" id="botao-buscar-especialidade" value="Buscar" class="botoes" />
             </div>
         </section>
     </main>
@@ -52,6 +51,7 @@
     <footer class="rodape">
         <p>Site criado pelo <a href=xxxx target="_blank">Grupo 4</a> para <a href=xxxx target="_blank">PUC-MINAS</a></p>
     </footer>
+    <script src="procure-medico.js" href="/src/Procure seu médico/procure-medico.js"></script>
 </body>
 
 </html>
