@@ -169,6 +169,12 @@ function substituirSenhaStorage(novaSenha) {
 
                 // stringfy antes de salvar
                 localStorage.setItem("listaUser", JSON.stringify(listaCadastros));
+
+                alert("Senha alterada com sucesso");
+
+                setTimeout(() => { 
+                    window.location.href = "../Login/login.html";
+                },2000);
             }
         }
     }
