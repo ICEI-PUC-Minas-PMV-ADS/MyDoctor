@@ -84,7 +84,7 @@ li:hover {
     display: block;
 }
 
-.card-group>input {
+.card-group>input, .input-nova-senha {
     outline: 0;
     width: 100%;
     padding: 5px;
@@ -94,7 +94,11 @@ li:hover {
     border-bottom: 1px solid gray;
 }
 
-.card-group>button {
+.input-nova-senha {
+    margin: 10px 0;
+}
+
+.card-group>button, .btn-nova-senha {
     background-color: #20b2aa;
     border-radius: 30px;
     width: 100%;

@@ -31,7 +31,7 @@
             <nav>
             </nav>
         </header>
-        <form class="Cadastro">
+        <form id="container-esqueci-senha" class="Cadastro">
             <div class="card">
                 <div class="card-top">
                     <img class="imglogin" src="/src/assets/imagens/user.jpg" alt="Imagem usuário">
@@ -39,13 +39,14 @@
                     <p>Calma! Vamos te ajudar com isso!</p>
 
                     <div class="card-group">
-                        <input required type="email" id="email" placeholder="insira email cadastrado">
+                        <input required type="email" id="email" placeholder="Insira email cadastrado">
                     </div>
 
+                    <div id="mensagem-email-invalido"></div>
+                    <div id="container-nova-senha"></div>
+
                     <div class="card-group btn">
-                        <button type="submit">Enviar
-                            <i class="fa-solid fa-envelope"></i>
-                        </button>
+                        <button id="botao-redefinir-senha" type="submit">Enviar</button>
                     </div>
 
                     <div class="card-group">
