@@ -13,7 +13,6 @@ let userLogin = function () {
     // É a criação da condição que chama a função
         if (xml.status == 200) {
         //  Esse XML... retorna o código HTTP da resposta da chamada
-            console.log(xml.response);
         //  Esse console... retorna o conteúdo do corpo da resposta vinda do servidor
         }
     };

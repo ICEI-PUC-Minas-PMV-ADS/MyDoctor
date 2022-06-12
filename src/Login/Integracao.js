@@ -1,6 +1,5 @@
 let listaUser = []
 function entrar(event){
-    console.log('Entrou')
     event.preventDefault()
     let usuario = document.querySelector('#email')
     //  let userlabel = document.querySelector('#userlabel')
@@ -40,7 +39,6 @@ function entrar(event){
         }
     })
     if (usuario.value == uservalid.user && senhalog.value == uservalid.senha) {
-        console.log('validar')
         window.location.href = '../../../index.html'
 
     } else {
