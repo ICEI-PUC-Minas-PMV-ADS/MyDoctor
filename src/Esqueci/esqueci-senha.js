@@ -79,11 +79,39 @@ function criarContainerNovaSenha() {
     inputSenha.setAttribute("id", "input-nova-senha");
     inputSenha.setAttribute("type", "password");
 
+    let checkboxSenha = document.createElement("input");
+    checkboxSenha.classList.add("input-checkbox-mostrar-senha");
+    checkboxSenha.setAttribute("type", "checkbox");
+    checkboxSenha.addEventListener("click", () => {
+        if (inputSenha.type == "password") {
+            inputSenha.type = "text";
+        } else {
+            inputSenha.type = "password";
+        }
+    })
+
+    let labelCheckboxSenha = document.createElement("label");
+    labelCheckboxSenha.innerHTML = "Mostrar senha";
+
     let inputConfirmarSenha = document.createElement("input");
     inputConfirmarSenha.classList.add("input-nova-senha");
     inputConfirmarSenha.setAttribute("placeholder", "Confirme sua senha");
     inputConfirmarSenha.setAttribute("id", "input-confirmar-senha");
     inputConfirmarSenha.setAttribute("type", "password");
+
+    let checkboxConfirmarSenha = document.createElement("input");
+    checkboxConfirmarSenha.classList.add("input-checkbox-mostrar-senha");
+    checkboxConfirmarSenha.setAttribute("type", "checkbox");
+    checkboxConfirmarSenha.addEventListener("click", () => {
+        if (inputConfirmarSenha.type == "password") {
+            inputConfirmarSenha.type = "text";
+        } else {
+            inputConfirmarSenha.type = "password";
+        }
+    })
+
+    let labelCheckboxConfirmarSenha = document.createElement("label");
+    labelCheckboxConfirmarSenha.innerHTML = "Mostrar senha";
 
     let botaoEnviarSenha = document.createElement("button");
     botaoEnviarSenha.innerHTML = "Enviar nova senha";
@@ -94,7 +122,12 @@ function criarContainerNovaSenha() {
     });
 
     containerNovaSenha.appendChild(inputSenha);
+    containerNovaSenha.appendChild(checkboxSenha);
+    containerNovaSenha.appendChild(labelCheckboxSenha);
+
     containerNovaSenha.appendChild(inputConfirmarSenha);
+    containerNovaSenha.appendChild(checkboxConfirmarSenha);
+    containerNovaSenha.appendChild(labelCheckboxConfirmarSenha);
     containerNovaSenha.appendChild(botaoEnviarSenha);
 }
 
