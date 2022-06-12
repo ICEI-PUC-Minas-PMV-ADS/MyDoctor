@@ -6,75 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Procure o seu médico</title>
-    <link rel="shortcut icon"  href="tempsnip.ico" type="image/x-icon">
     <link rel="stylesheet" href="/src/assets/styles/procure-medico.css">
+    <link rel="shortcut icon" href="tempsnip.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
-</head>
+    <script src="procure-medico.js" href="/src/Procure seu médico/procure-medico.js"></script>
+    </head>
 
 <body>
-    <header id="imagem-mydoctor" class="cabecalho">
-        <img src="/src/assets/imagens/imagem-header.PNG" alt="Cabeçalho My Doctor">
-        <section class="section-menu-cabecalho">
+    <header class="cabecalho">
+        <section id="imagem-mydoctor" class="secao1">
+            <img src="/src/assets/imagens/imagem-header.PNG" alt="Cabeçalho My Doctor">
+        </section>
+        <section class="secao2">
             <nav class="menu-cabecalho">
                 <a class="item-menu" href="/src/index.html"><i class="fa fa-home"></i> Quem somos</a>
-                <a class="item-menu" href="/src/Contatos do site/fale conosco.html"><i class="fa-solid fa-at"></i>
-                    Contatos</a>
-                <a class="item-menu" href="/src/Cadastro/cadastro.html"> <i class="fa-solid fa-house-medical"></i> Seja um
-                    médico parceiro</a>
-                <a class="item-menu" href="/src/Procure seu médico/procure-medico.html"><i class="fa fa-search"></i> Procure
-                    o seu médico</a>
+                <a class="item-menu" href="/src/Contatos do site//fale conosco.html"><i class="fa-solid fa-at"></i> Contatos</a>
+                <a class="item-menu" href="/src/Cadastro/cadastro.html"><i class="fa-solid fa-house-medical"></i> Seja um médico parceiro</a>
+                <a class="item-menu" href="/src/Procure seu médico/procure-medico.html"><i class="fa fa-search"></i> Procure o seu médico</a>
             </nav>
-        </section>    
+        </section>
     </header>
     <main class="corpo">
         <section class="secao3">
-            <h2 class="tit_2">Procure o seu médico</h2>
-            <h3 class="tit_3">Pela região:</h3>
-            <div id="divBusca">
-                <input type="text" id="txtBusca" placeholder="Escreva o nome de sua região" />
-                <button type="button" function="onClick">Buscar</button>
+            <h2 class="tit_1">Procure o seu médico</h2>
+            <h3 class="tit_2">Pela região:</h3>
+            <div id="Busca">
+                <input type="text" placeholder="Escreva o nome de sua região" />
+                <input type="button" name="botao-buscar" id="botao-buscar" value="Buscar"
+                class="botoes" onclick="pesquisarMedicos(event)" />
             </div>
             <p>Ou</p>
-            <h3 class="tit_4">Pela especialidade:</h3>
-            <div id="divBusca">
-                <input type="text" id="txtBusca" placeholder="Escreva o nome da especialidade" />
-                <button type="button" function="onClick">Buscar</button>
+            <h3 class="tit_3">Pela especialidade:</h3>
+            <div id="Busca2">
+                <input type="text" placeholder="Escreva o nome da especialidade" />
+                <input type="button" name="botao-buscar" id="botao-buscar2" value="Buscar"
+                class="botoes" onclick="pesquisarMedicos(event)" />
             </div>
         </section>
     </main>
     <section class="secao4">
-        <div class="flex-container">
-            <div class="flex-item1">
+        <div id="container">
+            <div id="flex-item1">
                 <div>
                     <img class="imgs1" src="/src/assets/imagens/Usuário.png" alt="Usuário">
                 </div>
                 <div>Dra. Talita Moreira Bittencourt</div>
-                <div>Muito Satisfeito</div>
                 <br>
                 <div>
                     <img class="imgs1" src="/src/assets/imagens/Usuário.png" alt="Usuário">
                 </div>
                 <div>Dr. Eustáquio Marcelo Passos</div>
-                <div>Satisfeito</div>
                 <br>
                 <div>
                     <img class="imgs1" src="/src/assets/imagens/Usuário.png" alt="Usuário">
                 </div>
                 <div>Dr. Rodrigo Augusto Fasciani</div>
-                <div>Muito Satisfeito</div>
             </div>
-            <div class="flex-item2">
+            <div id="flex-item2">
                 <div>Ginecologista</div>
                 <div>CRM MG 16378</div>
                 <div>R$ 600,00</div>
                 <div>Seg. á Sex. das 08:00 ás 17:00</div>
                 <br>
-                <br>
                 <div>Clínico Geral</div>
                 <div>CRM MG 31764</div>
                 <div>R$ 400,00</div>
                 <div>Seg. á Sex. das 08:00 ás 16:00</div>
-                <br>
                 <br>
                 <div>Cardiologista</div>
                 <div>CRM MG 60440</div>

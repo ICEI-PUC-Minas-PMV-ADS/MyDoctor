@@ -15,21 +15,20 @@ body{
     height: 240px;
 }
 
-.section-menu-cabecalho {
+.secao2{
     background-color: #20b2aa;
     width: 50%;
     border-radius: 4px;
-    gap: 1vw;
-}
+ }
 
-.menu-cabecalho {
+.menu-cabecalho{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1vw;
 }
 
-.item-menu {
+.item-menu{
     color: black;
     font-size: min(13.5px, 2.2vw);
     border: 0;
@@ -40,7 +39,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.item-menu:hover {
+.item-menu:hover{
     background-color: #87f387;
     color: white
 }
@@ -50,88 +49,98 @@ body{
     height: auto;
 }
 
-.tit_2{
+.tit_1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     margin: 10px 0 0 0;
-    padding: 30px;
-    text-align: left;
+    padding: 25px;
+    text-align: center;
 }
 
-.tit_3{
+.tit_2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    padding: 16px;
-    text-align: left;
+    font-size: 18px;
+    padding: 12.5px;
+    text-align: center;
+}
+
+#Busca{
+    text-align: center;
+    margin: 0;
+}
+
+#Busca2{
+    text-align: center;
+    margin: 0;
 }
 
 input{
-    width: 250px;
-    height: 30px;
+    width: 300px;
+    height: 38px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 8px;
+    text-align: center;
 }
 
-button{
+.botoes{
     font-size: 1.0em;
     background-color: #20b2aa;
     border: 0;
     margin-top: 0.5em;
     color: black;
-    padding: 0.2em 0.6em;
+    padding: 0.4em 0.8em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgb(0,0,0,0.5);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     cursor: pointer;
+    margin: 5px;
+    width: 80px;
+    height: 35px;
 }
 
-button:hover{
+.botoes:hover{
     background-color: #87f387;
     color: white;
 }
 
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin: auto;
+    font-size: 17px;
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 
-.tit_4{
+.tit_3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin: auto;
-    padding: 16px;
-    text-align: left;
+    font-size: 18px;
+    padding: 12.5px;
+    text-align: center;
 }
 
-.flex-container{
+#container{
     display: flex;
-    float: right;
-    transform: translateY(-110%);
+    position: relative;
+    left: 300px;
+    transform: translateY(-10%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
-    padding: 11px;
-    margin: 70px 10px 10px 10px;
+    padding: 20px;
+    margin: 70px 15px 15px 15px;
     border: 12px solid #978f8f;
-    width: 47%;
+    width: 45%;
 
     /*ALINHAMENTO DO EIXO PRINCIPAL*/
     justify-content: space-evenly;
 
-    /*ALINHAMENTO DO EIXO EIXO CRUZADO*/
+    /*ALINHAMENTO DO EIXO CRUZADO*/
     align-items: center;
 }
 
-.flex-container>div{
-    background-color: white;
+#container>div{
     text-align: center;
     line-height: 21px;
     font-size: 15px;
 }
-
 
 .imgs1{
     width: 20%;
@@ -162,7 +171,6 @@ footer a:hover{
     text-decoration: underline;
     color: white;
 }
-
 
 
 
