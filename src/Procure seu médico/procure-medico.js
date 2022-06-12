@@ -1,5 +1,5 @@
-var botao = document.getElementById('Buscar');
-var container = document.getElementById('#container');
+var botao = document.getElementById('botao-buscar');
+var container = document.getElementById('container');
 
 botao.addEventListener('click', function() {
     
