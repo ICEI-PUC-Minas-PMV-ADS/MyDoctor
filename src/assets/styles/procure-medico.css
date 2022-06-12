@@ -132,9 +132,14 @@ p{
     width: 45%;
     height: auto;
 
-    justify-content: space-evenly;
-
+    justify-content: center;
     align-items: center;
+}
+
+.secao4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #container>div{

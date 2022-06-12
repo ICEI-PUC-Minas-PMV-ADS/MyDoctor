@@ -62,36 +62,12 @@ const exibirDadosMedicoCidade = cidade => {
   listaMedicosCadastrados = JSON.parse(listaMedicosCadastrados);
 
   for (let dadosMedico of listaMedicosCadastrados) {
-    console.log(dadosMedico);
-
     let cidadeCadastrada = dadosMedico.cidadecad.toLowerCase();
 
     cidade = cidade.toLowerCase();
 
     if (cidade == cidadeCadastrada) {
-      let nomeCadastrado = dadosMedico.nomecad;
-      let especidadeCadastrada = dadosMedico.especad;
-      let crmCadastrado = dadosMedico.crmcad;
-
-      // Exibir nome, especialidade e CRM
-      let listaDadosMedico = document.createElement("ul");
-      listaDadosMedico.classList.add("lista-dados-medico");
-
-      let nomeMedico = document.createElement("li");
-      nomeMedico.innerHTML = `Nome: ${nomeCadastrado}`;
-
-      let especialidadeMedico = document.createElement("li");
-      especialidadeMedico.innerHTML = `Especialidade: ${especidadeCadastrada}`;
-
-      let crmMedico = document.createElement("li");
-      crmMedico.innerHTML = `CRM: ${crmCadastrado}`;
-
-      listaDadosMedico.appendChild(nomeMedico);
-      listaDadosMedico.appendChild(especialidadeMedico);
-      listaDadosMedico.appendChild(crmMedico);
-
-      container.appendChild(listaDadosMedico);
-      container.style.display = "block";
+      criarListaDadosMedico(dadosMedico);
     } else {
       exibirMensagemErroCidade(MENSAGEM_CIDADE_NAO_ENCONTRADA);
     }
@@ -106,8 +82,61 @@ botaoBuscarEspecialidade.addEventListener("click", () => {
   }
 
   mensagemEspecialidadeInvalida.style.display = "none";
+  container.style.display = "none";
 
+  exibirDadosMedicoEspecialidade(especialidade);
 });
+
+const exibirDadosMedicoEspecialidade = especialidade => {
+  let listaMedicosCadastrados = localStorage.getItem("listaUser");
+
+  if (!listaMedicosCadastrados) {
+    exibirDadosMedicoEspecialidade(MENSAGEM_ESPECIALIDADE_NAO_ENCONTRADA);
+    return;
+  }
+
+  listaMedicosCadastrados = JSON.parse(listaMedicosCadastrados);
+
+  for (let dadosMedico of listaMedicosCadastrados) {
+    let especidadeCadastrada = dadosMedico.especad.toLowerCase();
+
+    especialidade = especialidade.toLowerCase();
+
+    if (especialidade == especidadeCadastrada) {
+      criarListaDadosMedico(dadosMedico);
+    } else {
+      exibirDadosMedicoEspecialidade(MENSAGEM_ESPECIALIDADE_NAO_ENCONTRADA);
+    }
+  }
+}
+
+const criarListaDadosMedico = dadosMedico => {
+  if (dadosMedico) {
+    let nomeCadastrado = dadosMedico.nomecad;
+    let especidadeCadastrada = dadosMedico.especad;
+    let crmCadastrado = dadosMedico.crmcad;
+  
+    // Exibir nome, especialidade e CRM
+    let listaDadosMedico = document.createElement("ul");
+    listaDadosMedico.classList.add("lista-dados-medico");
+  
+    let nomeMedico = document.createElement("li");
+    nomeMedico.innerHTML = `Nome: ${nomeCadastrado}`;
+  
+    let especialidadeMedico = document.createElement("li");
+    especialidadeMedico.innerHTML = `Especialidade: ${especidadeCadastrada}`;
+  
+    let crmMedico = document.createElement("li");
+    crmMedico.innerHTML = `CRM: ${crmCadastrado}`;
+  
+    listaDadosMedico.appendChild(nomeMedico);
+    listaDadosMedico.appendChild(especialidadeMedico);
+    listaDadosMedico.appendChild(crmMedico);
+  
+    container.appendChild(listaDadosMedico);
+    container.style.display = "block";
+  }
+}
 
 const validarEspecialidade = especialidade => {
   let especialidadeValida = true;
