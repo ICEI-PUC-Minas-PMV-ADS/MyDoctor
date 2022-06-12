@@ -314,7 +314,14 @@ txtn7.addEventListener("keypress", function (e) {
 
 function cadastrar() {
     if (validnome && validemail && validsenha && validcelular && validcidade && validendereco && validestado && validesp && validcrm && validsenha) {
-        let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+        let listaUser = localStorage.getItem('listaUser');
+
+        listaUser = JSON.parse(listaUser);
+        console.log(listaUser);
+
+        if (listaUser == null) {
+            listaUser = new Array();
+        }
 
         listaUser.push(
             {
@@ -331,8 +338,7 @@ function cadastrar() {
             }
         )
 
-        localStorage.setItem('listaUser', JSON.stringify(listaUser))
-
+        localStorage.setItem('listaUser', JSON.stringify(listaUser));
 
         msgSuccess.setAttribute('style', 'display:block')
         msgSuccess.innerHTML = '<strong>Cadastrando usuário, favor aguardar...</strong>'
