@@ -2,15 +2,15 @@ var botaoBuscarCidade = document.querySelector('#botao-buscar-cidade');
 var botaoBuscarEspecialidade = document.querySelector('#botao-buscar-especialidade');
 var container = document.getElementById('container');
 
-let cidadeInvalida = document.querySelector("#cidade-invalida");
-let especialidadeInvalida = document.querySelector("#especialidade-invalida");
+let mensagemCidadeInvalida = document.querySelector("#cidade-invalida");
+let mensagemEspecialidadeInvalida = document.querySelector("#especialidade-invalida");
 
 let especialidade;
 let cidade;
 
 window.onload = () => {
-  cidadeInvalida.style.display = "none";
-  especialidadeInvalida.style.display = "none";
+  mensagemCidadeInvalida.style.display = "none";
+  mensagemEspecialidadeInvalida.style.display = "none";
 }
 
 const changeCidade = event => {
@@ -22,20 +22,52 @@ const changeEspecialidade = event => {
 }
 
 botaoBuscarCidade.addEventListener("click", () => {
-  if (cidade.length < 3) {
-    cidadeInvalida.innerHTML = "O campo 'Cidade' está inválido. Deve ter no mínimo 3 caracteres.";
-    cidadeInvalida.style.display = "block";
-    cidadeInvalida.style.color = "red";
+  let campoCidadeValido = validarCidade(cidade);
+
+  if (!campoCidadeValido) {
+    return;
   }
+
+  mensagemCidadeInvalida.style.display = "none";
+
 });
 
-botaoBuscarEspecialidade.addEventListener("click", () => {
-  if (especialidade.length < 5) {
-    especialidadeInvalida.innerHTML = "O campo 'Especialidade' está inválido. Deve ter no mínimo 5 caracteres.";
-    especialidadeInvalida.style.display = "block";
-    especialidadeInvalida.style.color = "red";
+const validarCidade = cidade => {
+  let cidadeValida = true;
+
+  if (cidade.length < 3) {
+    mensagemCidadeInvalida.innerHTML = "O campo 'Cidade' está inválido. Deve ter no mínimo 3 caracteres.";
+    mensagemCidadeInvalida.style.display = "block";
+    mensagemCidadeInvalida.style.color = "red";
+    return cidadeValida = false;
   }
+
+  return cidadeValida;
+}
+
+botaoBuscarEspecialidade.addEventListener("click", () => {
+  let especialidadeValida = validarEspecialidade(especialidade);
+
+  if (!especialidadeValida) {
+    return;
+  }
+
+  mensagemEspecialidadeInvalida.style.display = "none";
+
 });
+
+const validarEspecialidade = especialidade => {
+  let especialidadeValida = true;
+
+  if (especialidade.length < 5) {
+    mensagemEspecialidadeInvalida.innerHTML = "O campo 'Especialidade' está inválido. Deve ter no mínimo 5 caracteres.";
+    mensagemEspecialidadeInvalida.style.display = "block";
+    mensagemEspecialidadeInvalida.style.color = "red";
+    return especialidadeValida = false;
+  }
+
+  return especialidadeValida;
+}
 
 
 
