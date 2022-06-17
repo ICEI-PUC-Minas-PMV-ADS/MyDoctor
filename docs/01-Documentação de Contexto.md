@@ -12,7 +12,7 @@ Ao marcar uma consulta com um médico de uma especialidade, as pessoas recorrem 
 
 Em função disso, este projeto desenvolverá uma plataforma que possibilite às pessoas encontrarem ampla informação a respeito de profissionais da saúde que precisam. Além disso, essa plataforma também proporcionará aos próprios médicos a apresentação de suas especialidades e a recepção de indicações em relação ao seu trabalho.
 
-## Problema
+## Definição do problema
 
 Conforme introduzido anteriormente, este projeto busca solucionar a dificuldade dos pacientes de encontrar referências consistentes de profissionais de medicina. Essas referências podem ser de diversos tipos como: especialidade do médico, endereço do consultórios, telefone para contato, horários disponíveis para consultas, indicações acerca da qualidade do atendimento, entre outras.
 
