@@ -1,77 +1,75 @@
-
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+A metodologia deste trabalho consiste em apresentar o grupo de ferramentas presentes no projeto e a maneira pela qual tais recursos foram utilizados. Foram utilizados tanto recursos para a manutenção do código fonte, quanto ferramentas de gestão e organização de equipe na execução das etapas do projeto.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+## Relação de Ambientes de Trabalho
 
-## Controle de Versão
+A tabela abaixo demonstra as plataformas nas quais foram desenvolvidos os respectivos artefatos do projeto, além do link para acessá-los:
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+|               Ambiente            |   Plataforma   | Link de Acesso |
+|-----------------------------------|----------------|----------------|
+| Repositório de código fonte       |     GitHub     | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t9-mydoctor|
+| Documentos do projeto             |  Google Drive  | https://docs.google.com/document/d/1lsGX9RgZk6gawR2SgzTAa8rWtZ8IF7ut/edit?usp=sharing&ouid=107233453519518417100&rtpof=true&sd=true|
+| Documentos do projeto             |    GitHub      | https://github.com/ICEI-PUC-Minas-PMV-ADS/MyDoctor/tree/master/docs|
+| Projeto de Interface e Wireframes |   MarvelApp    | https://marvelapp.com/prototype/i44icbe/screen/86277419|
+| Gerenciamento do Projeto          |    GitHub      | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t9-mydoctor/projects/1|
 
-O projeto segue a seguinte convenção para o nome de branches:
+## Gestão de código fonte
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+Conforme já apresentado anteriormente, foi utilizado o GitHub para o desenvolvimento e a gestão do código fonte do site programado pela equipe. Trata-se de uma plataforma de hospedagem de código para controle de versão e colaboração. Nela é possível que várias pessoas trabalhem conjuntamente em projetos de desenvolvimento de software. Isso se faz possível em função do controle de versões oferecer muita flexibilidade no que diz respeito a como os usuários gerenciam mudanças.
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
+Na plataforma do GitHub o fluxo de trabalho a ser seguido pelo grupo é o GitFlow que consiste na criação de ramificações de recursos, adiando o “merge” com a ramificação de tronco principal para o momento em que o recurso esteja completo. Além disso, esse fluxo de trabalho usa duas ramificações para registrar o histórico do projeto: “main” armazena o histórico do lançamento oficial e “develop” serve como uma ramificação de integração para recursos, conforme demonstrado na figura abaixo:
 
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
+![image](https://user-images.githubusercontent.com/103527877/174411065-bf394efe-8a7c-40a3-9b36-52fc626ea67d.png)
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+Conforme são criados recursos baseados na ramificação de desenvolvimento mais recente, os mesmos permanecem em ramificações específicas, enviadas para o repositório central para realizar backup ou colaboração entre a equipe. Conforme dito anteriormente, essas ramificações “feature” usam a ramificação “develop” como base. Após sua conclusão, é feito “merge” de volta para a ramificação de desenvolvimento. Portanto, os recursos nunca interagem direto com a ramificação “main”:
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+![image](https://user-images.githubusercontent.com/103527877/174411149-71eb8e36-6d29-4bd7-bbb4-6bf5583cd753.png)
 
-## Gerenciamento de Projeto
+Após a conclusão dos recursos baseados na “develop”, realiza-se o lançamento, bifurcando-a com uma ramificação release. Nesse momento, nenhum novo recurso pode ser adicionado. Somente atualizações de segurança, geração de documentação e outras tarefas relacionadas ao lançamento devem ocorrer nessa ramificação. Finalmente, após a conclusão da release, é feito o merge para a ramificação “main”, que recebe um número da versão. Também é feito merge novamente para a ramificação develop, caso tenha recebido modificações desde o início do lançamento:
 
-### Divisão de Papéis
+![image](https://user-images.githubusercontent.com/103527877/174411288-aa1967b4-5996-4019-beb5-3ce5062ea1c2.png)
 
-Apresente a divisão de papéis entre os membros do grupo.
+Tal método de ramificação dedicada aos lançamentos possibilita que uma equipe aperfeiçoe o lançamento atual enquanto outra dá continuidade aos recursos para o próximo lançamento.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+## Gerenciamento do Projeto
 
-### Processo
+O gerenciamento e organização do projeto se baseia na metodologia ágil Scrum, que prioriza a entrega de valor e o proporcionamento de uma maior adaptabilidade da equipe. Isso ocorre em função da facilidade desse método em lidar com imprevistos e mudanças no planejamento ao longo do percurso.
+A partir dessa metodologia, a equipe está organizada da seguinte maneira:
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+●	Scrum Master: Nayla Nicolli Ferreira
 
-### Ferramentas
+●	Product Owner: Gabriela Barbosa Caetano Abran
 
-As ferramentas empregadas no projeto são:
+●	Equipe de Desenvolvimento:
+ 	Débora Cristina Pereira Gonçalves
+  Franciele Balverde de Souza
+ 	Bruno Victor de Oliveira Flavio
+  
+●	Equipe de Design:
+ 	João Paulo Faria do Nascimento
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+Como já dito, para o gerenciamento, organização e distribuição das tarefas, utiliza-se a ferramenta do Github. As Sprints estão estruturadas no formato de marcos, conforme demonstrado abaixo:
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
+![image](https://user-images.githubusercontent.com/103527877/174411528-5e3241e6-ca24-49a2-a88d-4871349e8703.png)
+![image](https://user-images.githubusercontent.com/103527877/174411544-b370f7a0-823c-4da7-8237-0872546104a1.png)
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+Além disso, temos o Backlog do Produto elaborado pelo grupo no GitHub, cujo acesso é possível através da URL:
+ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t9-mydoctor/projects/1. 
+
+Abaixo, figura demonstrando a disposição dos entregáveis:
+
+![image](https://user-images.githubusercontent.com/103527877/174411584-d434053e-2188-4bf5-925a-f3058a11ac22.png)
+
+Os entregáveis estão dispostos no “Product Backlog” e apresentados em método Kanban conforme andamento da atividade:
+●	To do;
+
+●	In progress;
+
+●	Done.
+
+Adicionalmente, a ferramenta conta com um diretório para a criação de “Issues” que são pendências e problemas ainda não resolvidas, devendo ser tratadas e analisadas ao longo do projeto:
+
+![image](https://user-images.githubusercontent.com/103527877/174411646-aed0d471-e8b6-42d1-a175-d8166c9315e6.png)
+
+
