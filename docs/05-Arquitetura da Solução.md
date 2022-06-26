@@ -48,8 +48,6 @@ O mesmo acontece para a próxima opção do menu "Contato", sendo direcionado pa
 
 Ao escolher a opção "Seja um médico parceiro" no menu inferior, será direcionado a para tela de cadastro do médico (Tela 4), com os diversos campos para preenchimento. Nessa mesma tela, o médico também poderá fazer a edição do seu cadastro, caso já possua.
 
-Além disso, também é possível fazer a redefinição da senha. Na tela "Seja um médico parceiro", os botões de "Editar" e "Redefinir a sua senha", apenas estarão visíveis ao médico se o mesmo possuir o cadastro. Caso opte pela opção de redefinir a senha, o usuário será direcionado para a Tela 5, onde poderá preencher o seu email cadastrado e assim recuperar a senha.
-
 A última opção do menu inferior é "Procure o seu médico". Se o usuário clicar nessa opção, será direcionado para a Tela 6, onde poderá filtrar por região ou especialidade e obter os dados do(s) médico(s) que deseja.
 
 

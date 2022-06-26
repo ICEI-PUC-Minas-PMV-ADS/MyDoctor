@@ -38,19 +38,9 @@ As telas do projeto, se baseiam no fluxo do usuário detalhado no item anterior.
 
 Essa tela será direcionada aos médicos, os quais farão o seu cadastro. Para efetuar o cadastro, é necessário informar os seguintes dados: Nome, Email, Cidade, Estado, Celular, Endereço, Especialidade e CRM. Todos os campos do formulário são de preenchimento obrigatório.
  
-A tela terá uma dupla funcionalidade, sendo tanto para edição de cadastro quanto para a efetivação do primeiro cadastro. Para isso, ao carregar a tela, será analisado se o usuário com o email “XXX”, utilizado para o login, já possui cadastro. Se sim, serão exibidos os botões “Editar” e “Redefinir senha”. Caso contrário, apenas o botão “Salvar” estará visível na tela.
- 
-Além disso, caso o usuário já tenha um cadastro, todos os campos (exceto a senha) estarão inicialmente preenchidos com os valores cadastrados, facilitando o usuário para posterior edição dos dados.
- 
  ![image](https://user-images.githubusercontent.com/103527877/174411970-c638716f-960f-43a9-a4bb-41250c71e9ee.png)
 
 ![image](https://user-images.githubusercontent.com/103527877/174411984-88d791a2-a169-4fb7-93ae-f23e57b1f81c.png)
-
-### Tela - Editar Dados
-
-A tela editar dados surge após o médico clicar no botão “EDITAR” que fica localizado na página “SEJA UM MÉDICO PARCEIRO”. Essa janela possui a funcionalidade do usuário editar os dados cadastrados. O médico digita o seu e-mail e senha e clica em ok, após essa ação, os dados dele aparecerão nos campos da página “SEJA UM MÉDICO PARCEIRO” para serem editados e salvos novamente.
-
-![image](https://user-images.githubusercontent.com/103527877/174412058-6c60e7a8-c041-4f70-8f03-1af64a0f53de.png)
 
 ### Tela - Esqueci minha senha
 

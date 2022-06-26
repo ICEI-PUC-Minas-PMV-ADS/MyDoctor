@@ -8,7 +8,7 @@ Na tela principal (home page) será apresentado uma aba no cabeçalho com divers
 
 ### Seja um médico parceiro
 
-A tela de cadastro de novo médico é constituída de logomarca, cabeçalho, formulário para o médico inserir os dados profissionais, 3 botões com as finalidades de salvar as informações de um novo médico, editar os seus dados e redefinir senha, sendo que os 2 últimos botões ao serem clicados destinam o usuário para outra página; e por último existe o rodapé da página com informação dos criadores do site.
+A tela de cadastro de novo médico é constituída de logomarca, cabeçalho, formulário para o médico inserir os dados profissionais e por último existe o rodapé da página com informação dos criadores do site.
 
 A página também não permite que seja salvo os dados do médico nos TextBoxs ou ComboBoxs em branco, ou seja, todos devem ser preenchidos; por último e não menos importante após o usuário salvar os seus dados os campos são automaticamente limpos, essas funcionalidades foram desenvolvidas na linguagem de programação JavaScript.
 
