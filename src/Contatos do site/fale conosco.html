@@ -8,8 +8,9 @@
     <title>Contatos</title>
     <link rel="shortcut icon" href="tempsnip.ico" type="image/x-icon">
     <link rel="stylesheet" href="/src/assets/styles/faleconosco.css">
-    <script src="dbfaq.js"></script>
-    <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
+
+    <!-- Leaflet - Biblioteca JS para exibir mapas -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
 </head>
 
 <body>
@@ -90,12 +91,22 @@
             </form>
             </div>
         </section>
-        <section id="google-maps"></section>
+        <section id="container-mapa">
+            <section id="mapa"></section>
+        </section>
     </main>
     <footer id="rodape-home-page">
         <p>Site criado pelo <a href="#" target="_blank">Grupo 4</a> para <a href="#" target="_blank"> PUC-MINAS</a>
         </p>
     </footer>
+    <script src="/src/Contatos do site/mensagens.js"></script>
+    <script src="dbfaq.js"></script>
+    <script src="https://kit.fontawesome.com/266440bda3.js" crossorigin="anonymous"></script>
+
+    <!-- Leaflet - Biblioteca JS para exibir mapas -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <script src="/src/Contatos do site/exibir-mapa.js"></script>
+
     <script>
         var perg = '';
         for (i = 0; i < db.faq.length; i++) {
@@ -103,10 +114,6 @@
         }
         document.getElementById('Pergunta').innerHTML = perg;
     </script>
-    <script src="/src/Contatos do site/mensagens.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRsJ2uwXx7pD7KYGSh6UqvlR49iRCJ5VM&callback=inicializar">
-    </script>
-    <script src="/src/Contatos do site/api-google-maps.js"></script>
 </body>
 
 </html>

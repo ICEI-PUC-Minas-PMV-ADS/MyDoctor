@@ -160,7 +160,7 @@ h5 {
 #rodape-home-page {
     width: 100%;
     bottom: 0;
-    margin-top: 30px;
+    margin-top: 350px;
     font-size: 16.8px;
     padding: 5px;
     background-color: rgb(151, 143, 143);
@@ -175,6 +175,20 @@ h5 {
 #rodape-home-page a {
     font-weight: bold;
     color: white;
+}
+
+#container-mapa {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    margin: 50px 0;
+}
+
+#mapa {
+    width: 50%;
+    height: 50%;
+    position: absolute !important;
 }
 
 @media (max-width: 650px) {
@@ -209,5 +223,8 @@ h5 {
         top: 30px;
         right: 10px;
     }
-}
 
+    #mapa {
+        width: 100%;
+    }
+}
