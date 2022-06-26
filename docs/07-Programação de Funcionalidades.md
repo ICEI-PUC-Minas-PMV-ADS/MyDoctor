@@ -2,13 +2,13 @@
 
 Nesse tópico serão apresentadas as telas desenvolvidas para atender às funcionalidades do sistema. Também será fornecido o endereço (URL) e algumas orientações de acesso ao site.
 
-## Acesso ao cadastro de médicos (RF-01 e RF-02)
+## Acesso ao cadastro de médicos
 
 Na tela principal (home page) será apresentado uma aba no cabeçalho com diversos botões que farão o direcionamento do usuário para cada funcionalidade do site, conforme demonstrado abaixo:
 
 ### Seja um médico parceiro
 
-A tela de cadastro de novo médico é constituída de logomarca, cabeçalho, formulário para o médico inserir os dados profissionais e por último existe o rodapé da página com informação dos criadores do site.
+A tela de cadastro de novo médico é constituída de logomarca, cabeçalho, formulário para o médico inserir os dados profissionais, e por último existe o rodapé da página com informões dos criadores do site.
 
 A página também não permite que seja salvo os dados do médico nos TextBoxs ou ComboBoxs em branco, ou seja, todos devem ser preenchidos; por último e não menos importante após o usuário salvar os seus dados os campos são automaticamente limpos, essas funcionalidades foram desenvolvidas na linguagem de programação JavaScript.
 
@@ -16,13 +16,11 @@ A página também não permite que seja salvo os dados do médico nos TextBoxs o
 
 #### Requisitos atendidos
 
-●	RF-01 - O site deve apresentar uma aba no cabeçalho com informações de “Quem somos?”. Contendo parágrafos de missão, valores e visão.
-
 ●	RF-04 - O site deve conter uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova página com um formulário para o cadastro de novos médicos.
 
-●	RF-06 - O formulário de cadastro de novos médicos deve conter: nome, e-mail, celular, estado, cidade, CRM, endereço, especialidade e senha.
+● RF-05 - O formulário de cadastro de novos médicos deve conter: nome, e-mail, celular, estado, cidade, CRM, endereço, especialidade e senha.
 
-●	RF-11 - O site deve permitir visualizar as informações de contatos da(s) pessoa(s) que criaram o site e o mantém e permitir envio de mensagens para contato com os mesmos, informando nome, e-mail e texto da mensagem.
+●	RF-14 - Na página de cadastro (Seja um médico parceiro), para que o cadastro seja efetuado com sucesso, os campos deverão obedecer alguns requisitos: <br> Nome: mínimo 3 caracteres; <br>  E-mail, Endereço, Cidade, Estado, Especialidade, CRM, Senha: mínimo 4 caracteres em cada campo; <br> Celular: campo deve ter 11 caracteres.
 
 ●	RNF-01 - O site deve ser publicado em um ambiente acessível publicamente na Internet (GitHub Pages).
 
@@ -30,7 +28,7 @@ A página também não permite que seja salvo os dados do médico nos TextBoxs o
 
 ●	RNF-04 - O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
 
-●	RNF-05 - O arquivo de HTML deve apresentar tags semânticas, como: <nav>/<header>/<section>/<main>/<section>... Tornando assim o código mais claro para os leitores de tela localizar um conteúdo.
+●	RNF-05 - O arquivo de HTML deve apresentar tags semânticas, como: <nav>/<header>/<section>/<main>... Tornando assim o código mais claro para os leitores de tela localizar um conteúdo.
   
 ●	RNF-06 - O arquivo HTML deve apresentar a tag <img alt>, que mostra a descrição da imagem, possível a leitura da mesma quanto utilizado leitor de tela.
   
@@ -59,17 +57,13 @@ A página também não permite que seja salvo os dados do médico nos TextBoxs o
   
 #### Requisitos atendidos
 
-●	RF-01 - O site deve apresentar uma aba no cabeçalho com informações de “Quem somos?”. Contendo parágrafos de missão, valores e visão.
+●	RF-02 - O site deve apresentar imagens que auxiliem o entendimento do leitor para cada assunto exposto no corpo da página.
   
-●	RF-03 - O site deve apresentar uma aba no cabeçalho com os contatos do site contendo telefone, Whatsapp, Instagram, e-mail.
-  
-●	RF-04 - O site deve conter uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova página com um formulário para o cadastro de novos médicos.
-  
-●	RF-08 - O site deve apresentar uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova janela com 2 filtros de pesquisa. O primeiro filtro é para todas as cidades cadastradas no site e o segundo é para todas as especialidades também cadastradas no site.
+●	RF-12 - Na página de “Esqueci minha senha”, o usuário irá preencher o e-mail cadastrado. Caso esse e-mail não esteja na lista de cadastros, armazenada em localStorage, deverá ser exibida uma mensagem informando que o e-mail não está no cadastro.
  
-●	RF-11 - O site deve permitir visualizar as informações de contatos da(s) pessoa(s) que criaram o site e o mantém e permitir envio de mensagens para contato com os mesmos, informando nome, e-mail e texto da mensagem.
-  
-●	RF-13 - O site deve apresentar uma aba no cabeçalho com a funcionalidade que, ao ser clicada, abra uma nova janela com um formulário de avaliação da consulta do médico Z.
+●	RF-13 - Na página de “Esqueci minha senha”, caso o e-mail esteja cadastrado, haverá a opção do usuário criar uma nova senha. Se a senha for válida, ou seja, se tiver no mínimo 4 caracteres, será alterada na lista de usuários cadastrados em localStorage.
+
+● RF-15 - Na página de “Esqueci minha senha”, o usuário irá preencher o e-mail cadastrado. Esse campo de e-mail deve obedecer á alguns requisitos para que seja válido: <br> Qualquer tipo de sting <br> Seguido por caractere @ (obrigatório em e-mails) <br> Seguido por domínio/provedor (hotmail/gmail) <br> Seguido por um ponto obrigatório (.)
 
 #### Artefatos da funcionalidade
 
@@ -100,15 +94,15 @@ A home page é dividida em 5 partes. A primeira é o cabeçalho, contendo a imag
   
 ●	RF-02: O site deve apresentar imagens que auxiliem o entendimento do leitor para cada assunto exposto no corpo da página.
   
-●	RF-03 - O site deve apresentar uma aba no cabeçalho com os contatos do site contendo telefone, Whatsapp, e-mail.
+● RF-03 - O site deve apresentar uma aba no cabeçalho com os contatos do site contendo telefone, Whatsapp, Instagram, e-mail.
   
-●	RF-04 - O site deve conter uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova página com um formulário para o cadastro de novos médicos.
+● RF-04 - O site deve conter uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova página com um formulário para o cadastro de novos médicos.
   
-●	RF-08 - O site deve apresentar uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova janela com 2 filtros de pesquisa. O primeiro filtro é para todas as cidades cadastradas no site e o segundo é para todas as especialidades também cadastradas no site.
+● RF-06 - O site deve apresentar uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova janela com 2 filtros de pesquisa. O primeiro filtro é para todas as cidades cadastradas no site e o segundo é para todas as especialidades também cadastradas no site.
   
-●	RF-11 - O site deve permitir visualizar as informações de contatos da(s) pessoa(s) que criaram o site e o mantém e permitir envio de mensagens para contato com os mesmos, informando nome, e-mail e texto da mensagem.
+● RF-09 - O site deve permitir visualizar as informações de contatos da(s) pessoa(s) que criaram o site e o mantém e permitir envio de mensagens para contato com os mesmos, informando nome, e-mail e texto da mensagem.
   
-●	RF-13 - O site deve apresentar uma aba no cabeçalho com a funcionalidade que, ao ser clicada, abra uma nova janela com um formulário de avaliação da consulta do médico Z.
+● RF-10 - O site deve conter um item no menu que irá direcionar para a tela de Login, onde o usuário irá preencher os dados de “E-mail” e “Senha” cadastrados.
 
 #### Artefatos da funcionalidade
 
@@ -120,25 +114,26 @@ A home page é dividida em 5 partes. A primeira é o cabeçalho, contendo a imag
   
 ### Procure o Seu Médico
 
-A tela “Procure o Seu Médico” será utilizada principalmente por pacientes que desejam buscar pelos médicos cadastrados no site. Na tela de Seja um Médico Parceiro, os médicos que desejam se cadastrar, irão inserir seus devidos dados profissionais nos campos adequados  e assim que apertar o botão de  salvar, esses dados serão armazenados em JSON. 
 
+A tela “Procure o Seu Médico” será utilizada principalmente por pacientes que desejam buscar pelos médicos cadastrados no site. Na tela de Seja um Médico Parceiro, os médicos que desejam se cadastrar, irão inserir seus devidos dados profissionais nos campos adequados  e assim que apertar o botão de  salvar, esses dados serão armazenados em JSON. 
+  
 A tela “Procure o Seu Médico” contém uma logomarca, um cabeçalho, dois campos de pesquisas diferentes, que possibilitam o paciente  de pesquisar o médico desejado pela cidade ou pela especialidade. A tela ainda tem dois botões de buscas para que assim que o paciente digitar a cidade ou a especialidade, ele clique no botão ou aperte “enter” para o sistema fazer a busca desses médicos cadastrados.
   
-O sistema buscará na lista JSON, os médicos que o paciente solicitou e exibirá uma pequena tela com as devidas informações do médico: foto, nome, nível de satisfação, especialidade, CRM, valor de cada consulta e os dias e horários de atendimento. 
-
+O sistema buscará na lista JSON, os médicos que o paciente solicitou e exibirá uma pequena lista com as devidas informações do médico: nome, especialidade e CRM. 
 Nessa tela foram utilizadas apenas duas linguagens web, sendo elas, o HTML e o CSS.
+
 
 ![image](https://user-images.githubusercontent.com/103527877/174413815-abca1992-aac8-4ace-a53c-83ebb572c549.png)
 
 #### Requisitos atendidos
 
-●	RF-08 - O site deve apresentar uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova janela com 2 filtros de pesquisa. O primeiro filtro é para todas as cidades cadastradas no site e o segundo é para todas as especialidades também cadastradas no site.
+●	RF-06 - O site deve apresentar uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova janela com 2 filtros de pesquisa. O primeiro filtro é para todas as cidades cadastradas no site e o segundo é para todas as especialidades também cadastradas no site.
+ 
+● RF-07 - O site deve apresentar na janela dos filtros de pesquisa a funcionalidade de selecionar a cidade e a especialidade do médico e, ao clicar em “Buscar”, aparecer todos os profissionais do ramo X que estão cadastrados para a cidade Y em forma de lista.
   
-●	RF-09 - O site deve apresentar na janela dos filtros de pesquisa a funcionalidade de selecionar a cidade e a especialidade do médico e, ao clicar em “Buscar”, aparecer todos os profissionais do ramo X que estão cadastrados para a cidade Y em forma de lista.
+●	RF-08 - Após o usuário selecionar o médico “Z” da lista, o site deve apresentar a funcionalidade de mostrar as informações: nome, especialidade e CRM.
   
-●	RF-10 - Após o usuário selecionar o médico “Z” da lista, o site deve apresentar a funcionalidade de mostrar as informações: nome, especialidade, CRM, valor da consulta, endereço, dias e horários de atendimento e nível de satisfação.
-  
-●	RF-12 - Quando não existirem médicos da especialidade X cadastrados para a cidade Y, o site deve apresentar uma janela com essa informação. Nessa janela também deve estar presente um botão “ok”. Após o usuário clicar em “ok”, o site deve limpar os filtros de pesquisa.
+●	RF-16 - Na página de “Procure o seu médico”,quando não existirem médicos da especialidade X cadastrados para a cidade Y, o site deve apresentar uma mensagem com essa informação.
   
 ●	RNF-01 - O site deve ser publicado em um ambiente acessível publicamente na Internet (GitHub Pages).
   
@@ -148,7 +143,7 @@ Nessa tela foram utilizadas apenas duas linguagens web, sendo elas, o HTML e o C
   
 ●	RNF-04 - O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
   
-●	RNF-05 - O arquivo de HTML deve apresentar tags semânticas, como: <nav>/<header>/<section>/<main>/<section>... Tornando assim o código mais claro para os leitores de tela localizar um conteúdo.
+●	RNF-05 - O arquivo de HTML deve apresentar tags semânticas, como: <nav>/<header>/<section>/<main>... Tornando assim o código mais claro para os leitores de tela localizar um conteúdo.
   
 ●	RNF-06 - O arquivo HTML deve apresentar a tag <img alt>, que mostra a descrição da imagem, possível a leitura da mesma quanto utilizado leitor de tela.
   
@@ -171,14 +166,14 @@ Essa tela consiste em fornecer informações para contato com os mantenedores do
 ![image](https://user-images.githubusercontent.com/103527877/174413904-715657db-53ab-42c5-97e7-7ce04d9f2a3d.png)
 
 #### Requisitos atendidos
-
-●	RF-01 - O site deve apresentar uma aba no cabeçalho com informações de “Quem somos?”. Contendo parágrafos de missão, valores e visão.
   
 ●	RF-02: O site deve apresentar imagens que auxiliem o entendimento do leitor para cada assunto exposto no corpo da página.
   
-●	RF-03 - O site deve apresentar uma aba no cabeçalho com os contatos do site contendo telefone, Whatsapp, e-mail.
+●	RF-03 - O site deve apresentar uma aba no cabeçalho com os contatos do site contendo telefone, Instagram, Whatsapp, e-mail.
   
-●	RF-11 - O site deve permitir visualizar as informações de contatos da(s) pessoa(s) que criaram o site e o mantém e permitir envio de mensagens para contato com os mesmos, informando nome, e-mail e texto da mensagem.
+●	RF-09 - O site deve permitir visualizar as informações de contatos da(s) pessoa(s) que criaram o site e o mantém e permitir envio de mensagens para contato com os mesmos, informando nome, e-mail e texto da mensagem.
+
+●	RF-17 - Na página de Contatos, o site deve apresentar um mapa com a localização da empresa MyDoctor. Para que a localização seja exibida corretamente, deve-se informar a latitude e longitude, utilizando a API pública OpenStreetMap e a biblioteca Leaflet.
 
 #### Artefatos da funcionalidade
 
@@ -215,17 +210,11 @@ Para a construção dessa tela foi utilizada, sobretudo, a tecnologia HTML. Por 
 
 #### Requisitos atendidos
  
-●	RF-01 - O site deve apresentar uma aba no cabeçalho com informações de “Quem somos?”. Contendo parágrafos de missão, valores e visão.
+●	RF-02 - O site deve apresentar imagens que auxiliem o entendimento do leitor para cada assunto exposto no corpo da página.
   
-●	RF-03 - O site deve apresentar uma aba no cabeçalho com os contatos do site contendo telefone, Whatsapp, e-mail.
+● RF-10 - O site deve conter um item no menu que irá direcionar para a tela de Login, onde o usuário irá preencher os dados de “E-mail” e “Senha” cadastrados.
   
-●	RF-04 - O site deve conter uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova página com um formulário para o cadastro de novos médicos.
-  
-●	RF-08 - O site deve apresentar uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova janela com 2 filtros de pesquisa. O primeiro filtro é para todas as cidades cadastradas no site e o segundo é para todas as especialidades também cadastradas no site.
-  
-●	RF-11 - O site deve permitir visualizar as informações de contatos da(s) pessoa(s) que criaram o site e o mantém e permitir envio de mensagens para contato com os mesmos, informando nome, e-mail e texto da mensagem.
-  
-●	RF-13 - O site deve apresentar uma aba no cabeçalho com a funcionalidade que, ao ser clicada, abra uma nova janela com um formulário de avaliação da consulta do médico Z.
+● RF-11 - Na página de Login, deve possuir um link com a opção de “Esqueci a senha”, caso o usuário precise criar uma nova senha.
  
 #### Artefatos da funcionalidade
  
@@ -236,12 +225,4 @@ Para a construção dessa tela foi utilizada, sobretudo, a tecnologia HTML. Por 
 ●	imagem-header.png
 
 ![image](https://user-images.githubusercontent.com/103527877/174414085-518d4135-da3d-4325-98aa-eddf0f95daed.png)
-
-
-
-
-
-
-
-
 
