@@ -57,7 +57,7 @@ Além disso, ao funcionar como um meio de exposição dos profissionais de saúd
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="src"> Código Fonte</a></li>
 
 # Apresentação
 
