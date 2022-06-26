@@ -71,16 +71,19 @@ A tabela a seguir apresenta os requisitos funcionais do projeto, identificando s
 | RF-02 | O site deve apresentar imagens que auxiliem o entendimento do leitor para cada assunto exposto no corpo da página.| Média |
 | RF-03 | O site deve apresentar uma aba no cabeçalho com os contatos do site contendo telefone, Whatsapp, Instagram, e-mail.| Média |
 | RF-04 | O site deve conter uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova página com um formulário para o cadastro de novos médicos.| Alta |
-| RF-05 | O site deve apresentar a funcionalidade que permita ao usuário alterar o tamanho da letra.| Média |
-| RF-06 | O formulário de cadastro de novos médicos deve conter: nome, e-mail, celular, estado, cidade, CRM, endereço e especialidade.| Alta |
-| RF-07 | O site deve apresentar a funcionalidade de modificar o tamanho da imagem através da tecla ALT.| Média |
-| RF-08 | O site deve apresentar uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova janela com 2 filtros de pesquisa. O primeiro filtro é para todas as cidades cadastradas no site e o segundo é para todas as especialidades também cadastradas no site.| Alta |
-| RF-09 | O site deve apresentar na janela dos filtros de pesquisa a funcionalidade de selecionar a cidade e a especialidade do médico e, ao clicar em “Buscar”, aparecer todos os profissionais do ramo X que estão cadastrados para a cidade Y em forma de lista.| Alta |
-| RF-10 | Após o usuário selecionar o médico “Z” da lista, o site deve apresentar a funcionalidade de mostrar as informações: nome, especialidade, CRM, valor da consulta, endereço, dias e horários de atendimento e nível de satisfação.| Alta |
-| RF-11 | O site deve permitir visualizar as informações de contatos da(s) pessoa(s) que criaram o site e o mantém.| Baixa |
-| RF-12 | Quando não existirem médicos da especialidade X cadastrados para a cidade Y, o site deve apresentar uma janela com essa informação. Nessa janela também deve estar presente um botão “ok”. Após o usuário clicar em “ok”, o site deve limpar os filtros de pesquisa.| Alta |
-| RF-13 | O site deve apresentar uma aba no cabeçalho com a funcionalidade que, ao ser clicada, abra uma nova janela com um formulário de avaliação da consulta do médico Z.| Alta |
-| RF-14 | O formulário de avaliação deve conter um campo para preenchimento do nome do paciente, nome e especialidade do médico, espaço para inserção de comentários do paciente e botão para anexar comprovante de consulta (quando houver) e escala nível do atendimento, variando de 1 até 5. (1 – Muito Ruim, 2 - Ruim, 3 - Regular, 4 – Bom, 5 – Muito Bom).| Alta |
+| RF-05 | O formulário de cadastro de novos médicos deve conter: nome, e-mail, celular, estado, cidade, CRM, endereço, especialidade e senha.| Alta |
+| RF-06 | O site deve apresentar uma aba no cabeçalho com a funcionalidade de, ao clicar nela, abrir uma nova janela com 2 filtros de pesquisa. O primeiro filtro é para todas as cidades cadastradas no site e o segundo é para todas as especialidades também cadastradas no site. | Alta |
+| RF-07 | O site deve apresentar na janela dos filtros de pesquisa a funcionalidade de selecionar a cidade e a especialidade do médico e, ao clicar em “Buscar”, aparecer todos os profissionais do ramo X que estão cadastrados para a cidade Y em forma de lista. | Alta |
+| RF-08 | Após o usuário selecionar o médico “Z” da lista, o site deve apresentar a funcionalidade de mostrar as informações: nome, especialidade e CRM. | Alta |
+| RF-09 | O site deve permitir visualizar as informações de contatos da(s) pessoa(s) que criaram o site e o mantém e permitir envio de mensagens para contato com os mesmos, informando nome, e-mail e texto da mensagem. | Baixa |
+| RF-10 | O site deve conter um item no menu que irá direcionar para a tela de Login, onde o usuário irá preencher os dados de “E-mail” e “Senha” cadastrados. | Alta |
+| RF-11 | Na página de Login, deve possuir um link com a opção de “Esqueci a senha”, caso o usuário precise criar uma nova senha. | Alta |
+| RF-12 | Na página de “Esqueci minha senha”, o usuário irá preencher o e-mail cadastrado. Caso esse e-mail não esteja na lista de cadastros, armazenada em localStorage, deverá ser exibida uma mensagem informando que o e-mail não está no cadastro. | Alta |
+| RF-13 | Na página de “Esqueci minha senha”, caso o e-mail esteja cadastrado, haverá a opção do usuário criar uma nova senha. Se a senha for válida, ou seja, se tiver no mínimo 4 caracteres, será alterada na lista de usuários cadastrados em localStorage.| Alta |
+| RF-14 | Na página de cadastro (Seja um médico parceiro), para que o cadastro seja efetuado com sucesso, os campos deverão obedecer alguns requisitos: <br> • Nome: mínimo 3 caracteres; <br> • E-mail, Endereço, Cidade, Estado, Especialidade, CRM, Senha: mínimo 4 caracteres em cada campo; <br> • Celular: campo deve ter 11 caracteres.| Alta |
+| RF-15 | Na página de “Esqueci minha senha”, o usuário irá preencher o e-mail cadastrado. Esse campo de e-mail deve obedecer á alguns requisitos para que seja válido: <br> • Qualquer tipo de sting <br> • Seguido por caractere @ (obrigatório em e-mails) <br> • Seguido por domínio/provedor (hotmail/gmail) <br> • Seguido por um ponto obrigatório (.)| Alta |
+| RF-16 | Na página de “Procure o seu médico”,quando não existirem médicos da especialidade X cadastrados para a cidade Y, o site deve apresentar uma mensagem com essa informação.| Alta |
+| RF-17 | Na página de Contatos, o site deve apresentar um mapa com a localização da empresa MyDoctor. Para que a localização seja exibida corretamente, deve-se informar a latitude e longitude, utilizando a API pública OpenStreetMap e a biblioteca Leaflet.| Alta |
 
 ### Requisitos não funcionais
 
@@ -92,7 +95,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 | RNF-02 | O site deve ser responsivo, permitindo a visualização em um celular, desktop, tablet de forma adequada.| Alta |
 | RNF-03 | O site deve ter bom nível de contraste entre os elementos da tela em conformidade.| Média |
 | RNF-04 | O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).| Alta |
-| RNF-05 | O arquivo de HTML deve apresentar tags semânticas, como: <nav>/<header>/<section>/<main>/<section>. Tornando assim o código mais claro para os leitores de tela localizar um conteúdo.| Média |
+| RNF-05 | O arquivo de HTML deve apresentar tags semânticas, como: <nav>/<header>/<section>/<main>. Tornando assim o código mais claro para os leitores de tela localizar um conteúdo.| Média |
 | RNF-06 | O arquivo HTML deve apresentar a tag <img alt> , que mostra a descrição da imagem, possível a leitura da mesma quanto utilizado leitor de tela.| Média |
 | RNF-07 | O desenvolvimento deve ser em HTML, CSS, Javascript, podendo utilizar frameworks.| Média |
 
