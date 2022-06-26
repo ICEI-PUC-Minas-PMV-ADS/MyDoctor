@@ -57,8 +57,6 @@ Além de facilitarem a acessibilidade para pessoas com deficiência, essas tags 
 
 Para os deficientes visuais, é recomendado que, em um formulário, se utilize tanto o atributo “placeholder” da tag “input”, que descreve o que o usuário deve informar no campo, e também a tag label, uma outra descrição que geralmente aparece logo acima da tag “input”.
 
-Outro atributo bastante útil é o “tabindex”, que facilita que os elementos da página sejam “navegáveis” através do teclado, apenas utilizando a tecla “tab”. Dessa forma, o usuário pode utilizar apenas o teclado ao invés do mouse. Esse atributo pode ser utilizado em tags como: button, div, dentre outras.
-
 Por fim, outro tópico bastante relevante seria a responsividade. Num mundo cada vez mais conectado, é fundamental que o site tenha um layout adequado para os dispositivos de todos os tamanhos: celulares, tablets, notebooks, desktops. A adequação do layout envolve ter bons tamanhos de imagens, textos e demais elementos, de acordo com os diversos tamanhos de tela. Para isso, será utilizado no CSS as “media queries”, especificando os tamanhos das telas.
 
 ### Requisitos Funcionais
