@@ -38,7 +38,7 @@ Além disso, ao funcionar como um meio de exposição dos profissionais de saúd
 
 Em vários sentidos, o avanço da tecnologia facilitou o cotidiano, tornando ágeis processos que eram lentos ou mesmo substituindo por processos mais simples aqueles que eram mais dispendiosos. 
 
-A proposta desse projeto é fazer parte desse processo, criando facilidades para problemas e demandas presentes na sociedade. Por meio dele será criado um cadastro de profissionais da área da saúde, com um duplo intuito. O primeiro será permitir a esses profissionais divulgarem seu perfis profissionais, e o segundo de  ajudar pessoas que precisam realizar consultas médicas, mas não possuem recomendações qualificadas sobre o profissional, encontrem-nos. Com a criação de uma plataforma, esses profissionais poderão colocar as suas devidas referências para facilitar o meio de comunicação e informação para pessoas que buscam uma determinada especialidade médica.
+A proposta desse projeto é fazer parte desse processo, criando facilidades para problemas e demandas presentes na sociedade. Por meio dele será criado um cadastro de profissionais da área da saúde, com um duplo intuito. O primeiro será permitir a esses profissionais divulgarem seus perfis profissionais, e o segundo de  ajudar pessoas que precisam realizar consultas médicas, mas não possuem recomendações qualificadas sobre o profissional, encontrem-nos. Com a criação de uma plataforma, esses profissionais poderão colocar as suas devidas referências para facilitar o meio de comunicação e informação para pessoas que buscam uma determinada especialidade médica.
 
 ## Acessibilidade 
 
