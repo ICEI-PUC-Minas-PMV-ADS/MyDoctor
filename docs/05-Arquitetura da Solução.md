@@ -1,10 +1,10 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+Nesse tópico, serão apresentados os componentes relacionados ao ambiente em que a solução ficará hospedada.
 
 ## Diagrama de componentes
 
-Os componentes que fazem parte da solução são apresentados na Figura que se segue.
+Na figura abaixo, são apresentados os respectivos componentes da solução desenvolvida.
 
 ![arquitetura](https://user-images.githubusercontent.com/63374421/164981403-d67371ff-a616-40ba-9637-9351a8b559d3.jpg)
 <center>Figura XX - Arquitetura da Solução</center>
@@ -14,8 +14,14 @@ A solução implementada conta com os seguintes módulos:
   - **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
    - **Local Storage** - armazenamento mantido no Navegador. Serão salvos os seguintes dados:
       - **Médicos** - esse dado será armazenado como uma lista com os JSON’s. Cada item da lista possui os dados do médico preenchidos no cadastro “Seja um médico parceiro”: nome, endereço, CRM, cidade, dentre outros dados. Esses dados são as respectivas “chaves” e “valores” do JSON.
-      - **Avaliações** - assim como os médicos, as avaliações serão armazenadas como uma lista de JSON’s, sendo que cada JSON possui os dados preenchidos no formulário de avaliação do médico, tais como: nome do médico, nome do paciente, nota da avaliação e outros.
   - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
+
+## Hospedagem 
+O site utiliza a plataforma do GitHub como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL:
+ 
+https://icei-puc-minas-pmv-ads.github.io/MyDoctor/
+
+## Protótipos de Fluxo do usuário
 
 Foi feito o protótipo de cada tela para o ambiente mobile:
 
@@ -39,16 +45,17 @@ Foi feito o protótipo de cada tela para o ambiente mobile:
 <center>Figura XX - Menu inferior</center>
 
 
-
-A imagem a seguir ilustra o fluxo do usuário em nossa solução. Assim que o usuário entra na plataforma, ele é apresentado à tela inicial (Tela 1). No menu inferior temos as seguintes opções de navegação: "Quem somos", "Contato", "Seja um médico parceiro" e "Procure seu médico". Esse menu está disponível em todas as telas da aplicação. 
+A imagem a seguir ilustra o fluxo do usuário em nossa solução. Assim que o usuário entra na plataforma, ele é apresentado à tela inicial. No menu inferior temos as seguintes opções de navegação: "Quem somos", "Contato", "Seja um médico parceiro", "Procure seu médico" e “Login”.  Esse menu está disponível em todas as telas da aplicação.
 
 Nesse menu, caso o usuário clique na opção "Quem somos", será direcionado para a área específica da página inicial, que contém a "Missão, Visão e Valores" do MyDoctor.
 
 O mesmo acontece para a próxima opção do menu "Contato", sendo direcionado para a última parte da página inicial, a qual possui as informações de contato.
 
-Ao escolher a opção "Seja um médico parceiro" no menu inferior, será direcionado a para tela de cadastro do médico (Tela 4), com os diversos campos para preenchimento. Nessa mesma tela, o médico também poderá fazer a edição do seu cadastro, caso já possua.
+Ao escolher a opção "Seja um médico parceiro" no menu inferior, será direcionado a para tela de cadastro do médico, com os diversos campos para preenchimento.
 
-A última opção do menu inferior é "Procure o seu médico". Se o usuário clicar nessa opção, será direcionado para a Tela 6, onde poderá filtrar por região ou especialidade e obter os dados do(s) médico(s) que deseja.
+Além disso, também é possível fazer a redefinição da senha. Na tela "Login", caso o médico opte pela opção de redefinir a senha ou tenha esquecido a mesma, ele será direcionado para a tela “Esqueci minha senha”, onde poderá preencher o seu e-mail cadastrado e assim recuperar a senha.
+
+A última opção do menu inferior é "Procure o seu médico". Se o usuário clicar nessa opção, será direcionado para a tela, onde poderá filtrar por cidade ou especialidade e obter os dados do(s) médico(s) que deseja.
 
 
 ![Fluxo de usuário](https://user-images.githubusercontent.com/63374421/164981563-317f5ca4-7d77-4636-8458-6ae52214e6bd.jpg)
@@ -63,19 +70,3 @@ As tecnologias que serão utilizadas são:
 
 A IDE usado para o desenvolvimento será o **Visual Studio Code**.
 
-## Hospedagem
-
-O site utiliza a plataforma do Heroku como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL:
- 
-> - [HerokuApp MyDoctor](https://project-my-doctor.herokuapp.com/)
-
-A publicação do site no Heroku é feita por meio de uma submissão do projeto (push) via git para o repositório remoto que se encontra no endereço:
-
-> - [HerokuApp Git MyDoctor](https://git.heroku.com/project-my-doctor.git)
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
