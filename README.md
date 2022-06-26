@@ -61,4 +61,4 @@ Além disso, ao funcionar como um meio de exposição dos profissionais de saúd
 
 # Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<li><a href="presentation"> Apresentação da solução</a></li>
