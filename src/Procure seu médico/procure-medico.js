@@ -37,6 +37,7 @@ botaoBuscarCidade.addEventListener("click", () => {
   }
 
   mensagemCidadeInvalida.style.display = "none";
+  container.innerHTML = "";
   exibirDadosMedicoCidade(cidade);
 });
 
@@ -85,6 +86,7 @@ botaoBuscarEspecialidade.addEventListener("click", () => {
   }
 
   mensagemEspecialidadeInvalida.style.display = "none";
+  container.innerHTML = "";
   container.style.display = "none";
 
   exibirDadosMedicoEspecialidade(especialidade);
