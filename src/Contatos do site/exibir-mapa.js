@@ -4,8 +4,7 @@ window.onload = () => {
 
 const exibirMapaLocalizacao = () => {
 
-  // Av. Paulista
-  const latitudeLongitude = [-23.55729, -46.66131];
+  const latitudeLongitude = [-21.18002, -47.80931];
 
   // Exibir mapa usando a biblioteca Leaflet e consumindo API OpenStreetMap
 
