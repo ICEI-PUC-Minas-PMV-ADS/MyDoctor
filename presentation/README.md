@@ -7,7 +7,7 @@ https://icei-puc-minas-pmv-ads.github.io/MyDoctor/
 ## Video de desmonstração:
 
 <div>
- <a href="https://www.youtube.com/watch?v=_Gv-ry4x2s0"><img src="https://www.imagemhost.com.br/images/2022/06/26/imagem-youtube.png" alt="Vídeo de apresentação YouTube - MyDoctor"/></a>
+ <a href="https://www.youtube.com/watch?v=_Gv-ry4x2s0" target="_blank"><img src="https://www.imagemhost.com.br/images/2022/06/26/imagem-youtube.png" alt="Vídeo de apresentação YouTube - MyDoctor"/></a>
 </div>
 
 ## Slide de apresentação:
