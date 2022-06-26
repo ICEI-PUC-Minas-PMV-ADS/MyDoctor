@@ -22,9 +22,9 @@ As telas do projeto, se baseiam no fluxo do usuário detalhado no item anterior.
 
 ### Tela - Home-Page
 
-É a principal tela do site. Por meio dela, o usuário possui acesso a outras telas e também às principais informações, notícias e funcionalidades da página. Pelo motivo de ser a página de apresentação do site, ela é desenvolvida de forma clara, atrativa e efetiva no que diz respeito a expor os serviços que o site oferece. Na Home-page “My doctor” existem três principais blocos: Menu, conteúdo e rodapé. Os objetivos de cada um deles são:
+É a principal tela do site. Por meio dela, o usuário possui acesso a outras telas e também às principais informações, notícias e funcionalidades da página. Pelo motivo de ser a página de apresentação do site, ela é desenvolvida de forma clara, atrativa e efetiva no que diz respeito a expor os serviços que o site oferece. Na Home-Page “My Doctor” existem três principais blocos: Menu, conteúdo e rodapé. Os objetivos de cada um deles são:
 
-●	Menu - Campo com o logo do site, menu de aplicação com as opções: Quem somos, Contatos, Seja um médico parceiro e Procure o seu médico.
+●	Menu - Campo com o logo do site, menu de aplicação com as opções: Quem somos, Contatos, Seja um médico parceiro, Procure o seu médico e Login.
 
 ●	Conteúdo - Campo que apresenta a visão, missão e os valores do site, junto com uma imagem correspondente. Outro objetivo importante dessa área é apresentar notícias e curiosidades sobre saúde, além de trazer as informações de contato das pessoas e/ou empresa que mantém o site.
 
@@ -36,17 +36,17 @@ As telas do projeto, se baseiam no fluxo do usuário detalhado no item anterior.
 
 ### Tela - Seja um médico parceiro
 
-Essa tela será direcionada aos médicos, os quais farão o seu cadastro. Para efetuar o cadastro, é necessário informar os seguintes dados: Nome, Email, Cidade, Estado, Celular, Endereço, Especialidade e CRM. Todos os campos do formulário são de preenchimento obrigatório.
+Essa tela será direcionada aos médicos, os quais farão o seu cadastro. Para efetuar o cadastro, é necessário informar os seguintes dados: Nome, E-mail, Cidade, Estado, Celular, Endereço, Especialidade, CRM e Senha. Todos os campos do formulário são de preenchimento obrigatório.
  
- ![image](https://user-images.githubusercontent.com/103527877/174411970-c638716f-960f-43a9-a4bb-41250c71e9ee.png)
+![image](https://user-images.githubusercontent.com/103527877/175817419-4d2f0817-87ae-48ca-92b5-88a4b8287c16.png)
 
 ![image](https://user-images.githubusercontent.com/103527877/174411984-88d791a2-a169-4fb7-93ae-f23e57b1f81c.png)
 
 ### Tela - Esqueci minha senha
 
-Caso o médico já possua um cadastro, na tela “Seja um médico parceiro”, este profissional terá acesso ao botão “Redefinir senha”. Ao clicar nesse botão, o usuário será encaminhado para a tela “Esqueci minha senha”.
+Caso o médico já possua um cadastro, na tela “Login”, este profissional terá acesso ao botão “Redefinir senha”. Ao clicar nesse botão, o usuário será encaminhado para a tela “Esqueci minha senha”.
 
-Nessa tela, poderá preencher o campo “E-mail”, para então receber um email com a senha inicialmente cadastrada.
+Nessa tela, poderá preencher o campo “E-mail”, para então receber um e-mail com a senha inicialmente cadastrada.
 
 ![image](https://user-images.githubusercontent.com/103527877/174412134-3722afd5-ed6a-4b75-b0a5-7ad01458f5be.png)
 
@@ -54,7 +54,7 @@ Nessa tela, poderá preencher o campo “E-mail”, para então receber um email
 
 ### Tela - Procure o seu médico
 
-Essa tela será acessada, preferencialmente, por pacientes. Ela existe para permitir que eles encontrem o médico desejado, bem como as informações a respeito desse médico. Essas informações serão: o nome do profissional, sua especialidade, seu CRM, o valor da consulta e, por fim, os dias e horários de atendimento.
+Essa tela será acessada, preferencialmente, por pacientes. Ela existe para permitir que eles encontrem o médico desejado, bem como as informações a respeito desse médico. Essas informações serão: o nome do profissional, sua especialidade e o seu CRM.
 
 A tela terá dois campos de pesquisa diferentes, possibilitando que o paciente procure, por meio do primeiro campo, um médico por meio da cidade em que ambos se situam, e, por meio do segundo campo, por meio da especialidade do médico. 
 
