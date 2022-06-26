@@ -43,7 +43,10 @@ botaoBuscarCidade.addEventListener("click", () => {
 const validarCidade = cidade => {
   let cidadeValida = true;
 
-  if (cidade.length < 3) {
+  if (!cidade) {
+    exibirMensagemErroCidade(MENSAGEM_CAMPO_CIDADE_INVALIDA);
+    return cidadeValida = false;
+  } else if (cidade.length < 3) {
     exibirMensagemErroCidade(MENSAGEM_CAMPO_CIDADE_INVALIDA);
     return cidadeValida = false;
   }
@@ -91,7 +94,7 @@ const exibirDadosMedicoEspecialidade = especialidade => {
   let listaMedicosCadastrados = localStorage.getItem("listaUser");
 
   if (!listaMedicosCadastrados) {
-    exibirDadosMedicoEspecialidade(MENSAGEM_ESPECIALIDADE_NAO_ENCONTRADA);
+    exibirMensagemErroEspecialidade(MENSAGEM_ESPECIALIDADE_NAO_ENCONTRADA);
     return;
   }
 
@@ -141,6 +144,10 @@ const criarListaDadosMedico = dadosMedico => {
 const validarEspecialidade = especialidade => {
   let especialidadeValida = true;
 
+  if (!especialidade) {
+    exibirMensagemErroEspecialidade(MENSAGEM_CAMPO_ESPECIALIDADE_INVALIDA);
+    return especialidadeValida = false;
+  }
   if (especialidade.length < 5) {
     exibirMensagemErroEspecialidade(MENSAGEM_CAMPO_ESPECIALIDADE_INVALIDA);
     return especialidadeValida = false;
